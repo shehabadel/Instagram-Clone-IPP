@@ -10,12 +10,32 @@ list and their posts.
 
 ## Stacks
 
-1) HTML5
-2) CSS3
-3) JavaScript
-4) jQuery
-5) PHP
-6) MySQL
+| Tech         | Usage                                     |
+|--------------|-------------------------------------------|
+| HTML5        | Main structure of the web page.           |
+| CSS3         | Cascade styling of the web page.          |
+| JavaScript   | Client-side dynamic manipulation          |
+| jQuery       | JavaScript library for HTML manipulation. |
+| PHP          | Server-side scripting                     |
+| MySQL        | Relational database.                      |
+| Google Fonts | Google Fonts API                          |
+| Bootstrap    | CSS3 pre-defined components               |
 
 
 ## Project Structure
+
+| Directory  | Usage                                                                           |
+|------------|---------------------------------------------------------------------------------|
+| assets     | contains global images, fonts, gifs...etc.                                      |
+| css        | contains global css properties used across all pages.                           |
+| pages      | contains pages folders each has its own html, css, js, and php files.           |
+| components | contains reusable components folders each its own html, css, js, and php files. |
+| js         | contains global JavaScript files.                                               |
+
+ - css
+	 - `index.css`
+ - js
+ - components
+ - pages
+ - `index.html` -> Entry point
+ - `README.md`
