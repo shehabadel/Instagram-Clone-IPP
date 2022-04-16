@@ -94,11 +94,11 @@ a{
     text-decoration: underline;
 }
 
-a:visited.one{
+a:visited{
     color: blueviolet;
 
 }
-a:active.two{
+a:active{
     color: white;
 
 }
