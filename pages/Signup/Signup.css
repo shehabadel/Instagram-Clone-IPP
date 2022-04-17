@@ -8,7 +8,7 @@
     --main-button-hover: #6695F2;
 }
 body {
-    background-color: var(--main-background);
+    background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg, var(--main-background),var(--main-post));
     font-family: "Roboto", sans-serif;
   }
   
