@@ -8,15 +8,15 @@
     --main-button-hover: #6695F2;
 }
 body {
-    background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg, var(--main-background),var(--main-post));
+    background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg,var(--main-button), var(--main-background));
     font-family: "Roboto", sans-serif;
   }
   
   .signup-box {
     width: 350px;
-    height: 550px;
+    height: 750px;
     margin: auto;
-    background-color: var(--main-post);
+    background: linear-gradient(45deg,var(--main-background),var(--main-post),var(--main-background));
     border-radius: 15px;
   }
   
@@ -77,10 +77,7 @@ a:visited{
     color: blueviolet;
 
 }
-a:active{
-    color: white;
 
-}
 a:hover{
     color:var(--main-button-hover);
     text-decoration: underline;

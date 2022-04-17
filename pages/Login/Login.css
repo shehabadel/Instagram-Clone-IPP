@@ -16,7 +16,7 @@
     margin: auto;
     margin-block-start: 50px;
     border-radius: 15px;
-    background-color: var(--main-post);
+    background: linear-gradient(45deg,var(--main-background),var(--main-post),var(--main-background));
 
  
   }
@@ -24,7 +24,7 @@
 
 body {
   
-    background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg, var(--main-background),var(--main-post));
+    background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg,var(--main-button), var(--main-background));
     font-family: "Roboto", sans-serif;
   }
 
@@ -98,10 +98,7 @@ a:visited{
     color: blueviolet;
 
 }
-a:active.two{
-    color: white;
 
-}
 
 
 a:hover{
