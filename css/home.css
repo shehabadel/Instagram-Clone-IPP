@@ -1,5 +1,9 @@
-@import url('../../css/index.css');
-
 html{
     background-color: var(--main-background);
+}
+body{
+    background-color: var(--main-background) !important;
+}
+.profile-card{
+    font-weight: 500;
 }
