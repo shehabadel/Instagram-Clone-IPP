@@ -1,5 +1,10 @@
-<?php include './inc/head.php'; ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include 'C:\xampp\htdocs\Instagram-Clone-IPP\inc\head.php'; ?>
+    <link rel="stylesheet" type="text/css" href='../../css/home.css'>
+    <title>Home</title>
+</head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
         <div class="container">
@@ -22,8 +27,7 @@
             </div>
         </div>
     </nav>
-
-    <main>
-        <div class="container d-flex flex-column align-items-center">
-            <?php include './inc/scripts.php'; ?>
-    <?php include './inc/footer.php';?>
+<!--Scripts-->
+<?php include 'C:\xampp\htdocs\Instagram-Clone-IPP\inc\scripts.php'?>
+<script src="./home.js"></script>
+<?php include 'C:\xampp\htdocs\Instagram-Clone-IPP\inc\footer.php'?>

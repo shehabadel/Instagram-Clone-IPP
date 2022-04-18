@@ -1,0 +1,5 @@
+@import url('../../css/index.css');
+
+html{
+    background-color: var(--main-background);
+}
