@@ -1,16 +1,3 @@
-:root {
-    --main-background: #1A1C26;
-    --main-post: #2E3141;
-    --main-post-inner: #363949;
-    --main-liked: #09B567;
-    --main-button: #688CFD;
-    --main-text-color: #FFFFFF;
-    --secondary-text-color: #8A91A6;
-    --main-button-hover: #6695F2;
-
-
-}
-
 * {
 
     border-radius: 2px;
