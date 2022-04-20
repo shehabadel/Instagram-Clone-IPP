@@ -4,6 +4,31 @@ html{
 body{
     background-color: var(--main-background) !important;
 }
+.write-post-wrapper{
+    text-align: center;
+}
+@media (max-width:600px) {
+    .write-post-wrapper{
+        text-align: left;
+    }
+}
+
+@media (min-width:600px) {
+    
+    .write-post-wrapper{
+        text-align: left;
+    }
+    
+}
+@media (min-width: 768px) {
+    .write-post-wrapper{
+        text-align: center;
+    }
+}
 .profile-card{
     font-weight: 500;
+}
+.posts-wrapper{
+    position: absolute;
+    overflow-y: scroll;
 }

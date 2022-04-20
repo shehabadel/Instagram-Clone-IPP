@@ -56,6 +56,7 @@ i[class*='fa']{
 .left-col-nav .list-group-item {
     background-color: transparent !important;
     cursor: pointer;
+    width: auto;
     padding: 15px;
     color: var(--main-text-color);
     font-weight: 500;
@@ -70,22 +71,75 @@ i[class*='fa']{
     display: inline;
 }
 
+#left-col #profile-username-name{
+    display: block;
+    width: fit-content;
+}
+
+#left-col .profile-avatar-wrapper{
+    width: fit-content;
+}
 @media (max-width:600px) {
+    .left-col-nav .list-group-item {
+        width: fit-content !important;
+    }
     .left-col-nav .list-group-item p {
         display: none;
     }
+    #left-col #profile-username-name{
+        display: none;
+    }
+    .avatar{
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
+}
 }
 
 @media (min-width:600px) {
+    .left-col-nav .list-group-item{
+        width: fit-content !important;
+    }
     .left-col-nav .list-group-item p {
         display: none;
+    }
+    #left-col #profile-username-name{
+        display: none;
+    }
+    .avatar{
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
     }
 }
 
 @media (min-width: 768px) {
+    .left-col-nav .list-group-item{
+        width: auto !important;
+    }
     .left-col-nav .list-group-item p {
         display: inline;
     }
+    #left-col #profile-username-name{
+        display: block;
+    }
+    .avatar{
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        -webkit-border-radius: 80px;
+        -moz-border-radius: 80px;
+        -ms-border-radius: 80px;
+        -o-border-radius: 80px;
+}
 }
 
 .left-col-nav .list-group-item:hover {
@@ -119,6 +173,7 @@ i[class*='fa']{
 @media (max-width:600px) {
     .main-button {
         padding: 10px 20px;
+        width: fit-content;
     }
     .main-button p{
         display: none;
@@ -128,6 +183,7 @@ i[class*='fa']{
 @media (min-width:600px) {
     .main-button {
         padding: 10px 20px;
+        width: fit-content;
     }
     .main-button p{
         display: none;
@@ -136,6 +192,7 @@ i[class*='fa']{
 @media (min-width: 768px) {
     .main-button {
         padding: 10px 40px;
+        width: auto;
     }
     .main-button p{
         display: inline;

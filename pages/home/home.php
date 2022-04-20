@@ -13,7 +13,9 @@
     <!--End Google Fonts API-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <!--Start page's custom stylesheet-->
     <link rel="stylesheet" type="text/css" href='../../css/home.css'>
+    <!--End page's custom stylesheet-->
     <title>Home</title>
 </head>
 
@@ -41,59 +43,76 @@
     </nav>
     <main>
         <div class="container-fluid">
-            <div id="left-col" class="col-sm-1 col-md-2">
-                <div class="card bg-transparent main-text border-0 profile-card" style="width: 18rem;">
-                    <div class="card-header border-0">
-                        <!--Fetch user's avatar here-->
-                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <a>
-                            <!--Fetch user's name here-->
-                            <h4 id="profile-name" class="fw-600">Shehab Adel</h4>
-                        </a>
-                        <!--Fetch user's username here-->
-                        <h6 id="profile-username" class="secondary-text">@shehabirl</h6>
-                    </div>
-                </div>
-                <div class="left-col-nav">
-                    <ul class="list-group bg-transparent">
-                        <li class="list-group-item" aria-current="true">
-                            <!--Link to home page-->
+            <div class="row">
+                <!--Start Side Navigation Bar-->
+                <div id="left-col" class="col-sm-1 col-md-2">
+                    <div class="card bg-transparent main-text border-0 profile-card" style="width: 18rem;">
+                        <div class="card-header border-0 profile-avatar-wrapper">
+                            <!--Redirects to user's profile-->
                             <a>
-                                <span><i class="fa-solid fa-house"></i></span>
-                                <p>
-                                    Home
-                                </p>
-                        </li>
-                        </a>
-                        <li class="list-group-item">
-                            <!--Link to profile page-->
-                            <a>
-                                <span><i class="fa-solid fa-user"></i></span>
-                                <p>
-                                    Profile
-                                </p>
+                                <!--Fetch user's avatar here-->
+                                <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
                             </a>
-                        </li>
-                        <li class="list-group-item">
-                            <!--Link to home page-->
-                            <a>
-                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                                <p>
-                                    Search
-                                </p>
+                        </div>
+                        <div class="card-body">
+                            <div id="profile-username-name">
+                                <!--Redirects to user's profile-->
+                                <a>
+                                    <!--Fetch user's name here-->
+                                    <!--Use php Sessions here-->
+                                    <h4 id="profile-name" class="fw-600">Shehab Adel</h4>
+                                </a>
+                                <!--Fetch user's username here-->
+                                <!--Use php Sessions here-->
+                                <h6 id="profile-username" class="secondary-text">@shehabirl</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-col-nav">
+                        <ul class="list-group bg-transparent">
+                            <li class="list-group-item" aria-current="true">
+                                <!--Link to home page-->
+                                <a>
+                                    <span><i class="fa-solid fa-house"></i></span>
+                                    <p>
+                                        Home
+                                    </p>
+                            </li>
                             </a>
-                        </li>
-                    </ul>
+                            <li class="list-group-item">
+                                <!--Link to profile page-->
+                                <a>
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <p>
+                                        Profile
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <!--Link to home page-->
+                                <a>
+                                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <p>
+                                        Search
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 write-post-wrapper">
+                        <button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span><p>Write Post</p></button>
+                    </div>
                 </div>
-                <div class="mt-5 text-center">
-                    <button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span><p>Write Post</p></button>
+                <!--End Side Navigation Bar-->
+                <div id="mid-col" class="col-sm-10 col-md-8">
+                    <div class="posts-wrapper">
+                        <div>
+                            <h1>Hello W</h1>
+                        </div>
+                    </div>
                 </div>
+                <div id="right-col" class="col-sm-1 col-md-2"></div>
             </div>
-            <div id="mid-col" class="col-sm-10 col-md-8">
-            </div>
-            <div id="right-col" class="col-sm-1 col-md-2"></div>
         </div>
     </main>
     <!--Scripts-->
