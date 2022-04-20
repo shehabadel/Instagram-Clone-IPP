@@ -15,6 +15,25 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--main-button);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-background);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--main-background-hover);
+    /* creates padding around scroll thumb */
+}
+
 /************* Start UTILITIES CLASSES **************/
 .main-bg {
     background-color: var(--main-background) !important;
@@ -47,10 +66,11 @@
     font-weight: 600 !important;
 }
 
-i[class*='fa']{
+i[class*='fa'] {
     margin-right: 10px;
     font-size: 20px;
 }
+
 /************** start nav bar **************/
 
 .left-col-nav .list-group-item {
@@ -71,25 +91,29 @@ i[class*='fa']{
     display: inline;
 }
 
-#left-col #profile-username-name{
+#left-col #profile-username-name {
     display: block;
     width: fit-content;
 }
 
-#left-col .profile-avatar-wrapper{
+#left-col .profile-avatar-wrapper {
     width: fit-content;
 }
+
 @media (max-width:600px) {
     .left-col-nav .list-group-item {
         width: fit-content !important;
     }
+
     .left-col-nav .list-group-item p {
         display: none;
     }
-    #left-col #profile-username-name{
+
+    #left-col #profile-username-name {
         display: none;
     }
-    .avatar{
+
+    .avatar {
         width: 45px;
         height: 45px;
         border-radius: 45px;
@@ -97,20 +121,23 @@ i[class*='fa']{
         -moz-border-radius: 45px;
         -ms-border-radius: 45px;
         -o-border-radius: 45px;
-}
+    }
 }
 
 @media (min-width:600px) {
-    .left-col-nav .list-group-item{
+    .left-col-nav .list-group-item {
         width: fit-content !important;
     }
+
     .left-col-nav .list-group-item p {
         display: none;
     }
-    #left-col #profile-username-name{
+
+    #left-col #profile-username-name {
         display: none;
     }
-    .avatar{
+
+    .avatar {
         width: 45px;
         height: 45px;
         border-radius: 45px;
@@ -122,16 +149,19 @@ i[class*='fa']{
 }
 
 @media (min-width: 768px) {
-    .left-col-nav .list-group-item{
+    .left-col-nav .list-group-item {
         width: auto !important;
     }
+
     .left-col-nav .list-group-item p {
         display: inline;
     }
-    #left-col #profile-username-name{
+
+    #left-col #profile-username-name {
         display: block;
     }
-    .avatar{
+
+    .avatar {
         width: 80px;
         height: 80px;
         border-radius: 80px;
@@ -139,7 +169,7 @@ i[class*='fa']{
         -moz-border-radius: 80px;
         -ms-border-radius: 80px;
         -o-border-radius: 80px;
-}
+    }
 }
 
 .left-col-nav .list-group-item:hover {
@@ -150,10 +180,11 @@ i[class*='fa']{
     background-color: var(--main-background-hover) !important;
     border: none !important;
 }
+
 /************** End nav bar **************/
 
 /************** start main button **************/
-.main-button{
+.main-button {
     padding: 10px 40px;
     transition: var(--hover-transition);
     -webkit-transition: var(--hover-transition);
@@ -161,21 +192,26 @@ i[class*='fa']{
     -ms-transition: var(--hover-transition);
     -o-transition: var(--hover-transition);
 }
-.main-button i{
+
+.main-button i {
     font-size: 15px;
 }
-.main-button p{
+
+.main-button p {
     display: inline;
 }
-.main-button:hover{
+
+.main-button:hover {
     background-color: var(--main-button-hover);
 }
+
 @media (max-width:600px) {
     .main-button {
         padding: 10px 20px;
         width: fit-content;
     }
-    .main-button p{
+
+    .main-button p {
         display: none;
     }
 }
@@ -185,19 +221,23 @@ i[class*='fa']{
         padding: 10px 20px;
         width: fit-content;
     }
-    .main-button p{
+
+    .main-button p {
         display: none;
     }
 }
+
 @media (min-width: 768px) {
     .main-button {
         padding: 10px 40px;
         width: auto;
     }
-    .main-button p{
+
+    .main-button p {
         display: inline;
     }
 }
+
 /************** end main button **************/
 
 /************* End UTILITIES CLASSES **************/

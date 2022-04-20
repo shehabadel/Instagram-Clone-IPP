@@ -4,6 +4,25 @@ html{
 body{
     background-color: var(--main-background) !important;
 }
+.posts-wrapper::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.posts-wrapper::-webkit-scrollbar-track {
+    background: var(--main-button);
+    /* color of the tracking area */
+}
+
+.posts-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--main-background);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--main-background-hover);
+    /* creates padding around scroll thumb */
+}
+
 .write-post-wrapper{
     text-align: center;
 }
@@ -28,7 +47,14 @@ body{
 .profile-card{
     font-weight: 500;
 }
+
+/********** Start Post **********/
 .posts-wrapper{
-    position: absolute;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    width: 100%;
 }
+.post-info{
+    display: flex;
+    flex-direction: row;
+}
+/********** End Post **********/

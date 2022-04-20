@@ -100,18 +100,44 @@
                         </ul>
                     </div>
                     <div class="mt-5 write-post-wrapper">
-                        <button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span><p>Write Post</p></button>
+                        <button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span>
+                            <p>Write Post</p>
+                        </button>
                     </div>
                 </div>
                 <!--End Side Navigation Bar-->
                 <div id="mid-col" class="col-sm-10 col-md-8">
                     <div class="posts-wrapper">
-                        <div>
-                            <h1>Hello W</h1>
+                        <div class="post">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="post-info">
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="right-col" class="col-sm-1 col-md-2"></div>
+                <div id="right-col" class="col-sm-1 col-md-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="post-info">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
