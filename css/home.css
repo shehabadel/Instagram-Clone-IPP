@@ -48,6 +48,11 @@ body{
     font-weight: 500;
 }
 
+#right-col{
+    position: sticky;
+    top: 0;
+}
+
 /********** Start Post **********/
 .posts-wrapper{
     /* overflow-y: scroll; */
@@ -56,5 +61,37 @@ body{
 .post-info{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.post-info-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.post-info-avatar .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.post-info-meta{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.post-info-meta p{
+    margin-bottom: 3px;
+}
+.post-img-wrapper{
+    border-radius: 2px solid var(--main-background);
+    -webkit-border-radius: 2px solid var(--main-background);
+    -moz-border-radius: 2px solid var(--main-background);
+    -ms-border-radius: 2px solid var(--main-background);
+    -o-border-radius: 2px solid var(--main-background);
+}
+.post-img{
+    max-height: 400px;
 }
 /********** End Post **********/

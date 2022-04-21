@@ -46,10 +46,10 @@
             <div class="row">
                 <!--Start Side Navigation Bar-->
                 <div id="left-col" class="col-sm-1 col-md-2">
-                    <div class="card bg-transparent main-text border-0 profile-card" style="width: 18rem;">
+                    <div class="card bg-transparent main-text border-0 profile-card">
                         <div class="card-header border-0 profile-avatar-wrapper">
                             <!--Redirects to user's profile-->
-                            <a>
+                            <a href="#" class="profile-hyperlink">
                                 <!--Fetch user's avatar here-->
                                 <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
                             </a>
@@ -57,7 +57,7 @@
                         <div class="card-body">
                             <div id="profile-username-name">
                                 <!--Redirects to user's profile-->
-                                <a>
+                                <a href="#" class="profile-hyperlink">
                                     <!--Fetch user's name here-->
                                     <!--Use php Sessions here-->
                                     <h4 id="profile-name" class="fw-600">Shehab Adel</h4>
@@ -72,7 +72,7 @@
                         <ul class="list-group bg-transparent">
                             <li class="list-group-item" aria-current="true">
                                 <!--Link to home page-->
-                                <a>
+                                <a href="#">
                                     <span><i class="fa-solid fa-house"></i></span>
                                     <p>
                                         Home
@@ -81,7 +81,7 @@
                             </a>
                             <li class="list-group-item">
                                 <!--Link to profile page-->
-                                <a>
+                                <a href="#">
                                     <span><i class="fa-solid fa-user"></i></span>
                                     <p>
                                         Profile
@@ -90,7 +90,7 @@
                             </li>
                             <li class="list-group-item">
                                 <!--Link to home page-->
-                                <a>
+                                <a href="#">
                                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                                     <p>
                                         Search
@@ -108,17 +108,50 @@
                 <!--End Side Navigation Bar-->
                 <div id="mid-col" class="col-sm-10 col-md-8">
                     <div class="posts-wrapper">
-                        <div class="post">
-                            <div class="card">
+                        <!--each post has specific id-->
+                        <div id="" class="post">
+                            <div class="card main-post text-white">
                                 <div class="card-header">
                                     <div class="post-info">
-
+                                        <div class="post-info-wrapper">
+                                            <div class="post-info-avatar">
+                                                <!--Fetch user's avatar here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="post-info-meta">
+                                                <!--Fetch user's name here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <p>Shehab Adel</p>
+                                                </a>
+                                                <!--Fetch post's Date here-->
+                                                <!--Must redirects to the post's page-->
+                                                <a href="#" class="post-hyperlink">
+                                                    <p>June 16</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <!--Shows report when clicked on-->
+                                            <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                                <span>
+                                                    <i class="fa-solid fa-caret-up m-0"></i>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body post-data">
+                                    <!--Replace fetched post text here-->
+                                    <p class="card-text post-text">Hello all I wrote something new here check it 😁😁😁 out Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in totam tempora cumque laborum incidunt dolorum perferendis a ab consequuntur omnis odit distinctio tempore odio alias doloribus, consectetur illo? Voluptatibus! </p>
+                                    <!--Replace fetched post image here-->
+                                        <!--Replace fetched post image src here-->
+                                        <img class="post-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/800px-Pleiades_large.jpg">
+                                        <div class="post-interactions mt-2">
+    
+                                        </div>
                                 </div>
                             </div>
                         </div>

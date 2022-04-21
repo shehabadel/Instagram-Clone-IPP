@@ -42,7 +42,9 @@ body::-webkit-scrollbar-thumb {
 .main-text {
     color: var(--main-text-color) !important;
 }
-
+.main-post{
+    background-color: var(--main-post) !important;
+}
 .secondary-text {
     color: var(--secondary-text-color) !important;
 }
@@ -73,6 +75,10 @@ i[class*='fa'] {
 
 /************** start nav bar **************/
 
+#left-col{
+    position: sticky;
+    top: 0;
+}
 .left-col-nav .list-group-item {
     background-color: transparent !important;
     cursor: pointer;
