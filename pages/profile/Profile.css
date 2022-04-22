@@ -20,7 +20,7 @@ body {
     border:#FFFFFF ;
     border: "4";
     margin-left: 400px;
-    margin-top: 300px;
+   
 }
 
 #post_images{
@@ -34,6 +34,11 @@ body {
     width: 30px;
     height: 30px;
     align-self: center;
+}
+
+.profile_details{
+align-items: center;
+
 }
 
 
