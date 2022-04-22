@@ -20,6 +20,7 @@
 </head>
 
 <body class="main-bg">
+    <!--
     <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
         <div class="container">
             <a class="navbar-brand" href="#">Traversy Media</a>
@@ -41,8 +42,9 @@
             </div>
         </div>
     </nav>
-    <main>
-        <div class="container-fluid">
+-->
+    <main class="mt-5">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <!--Start Side Navigation Bar-->
                 <div id="left-col" class="col-sm-1 col-md-2">
@@ -147,11 +149,54 @@
                                     <!--Replace fetched post text here-->
                                     <p class="card-text post-text">Hello all I wrote something new here check it 😁😁😁 out Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in totam tempora cumque laborum incidunt dolorum perferendis a ab consequuntur omnis odit distinctio tempore odio alias doloribus, consectetur illo? Voluptatibus! </p>
                                     <!--Replace fetched post image here-->
-                                        <!--Replace fetched post image src here-->
+                                    <!--Replace fetched post image src here-->
+                                    <div class="post-img-wrapper">
                                         <img class="post-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/800px-Pleiades_large.jpg">
-                                        <div class="post-interactions mt-2">
-    
+                                    </div>
+                                    <div class="post-interactions mt-2">
+                                        <div class="click mr-3">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <div class="ring"></div>
+                                            <div class="ring2"></div>
+                                            <p class="info">Added to favourites!</p>
                                         </div>
+                                        <!--Fetch number of favorites here-->
+                                        <div class="favorites-number mr-3">
+                                            <p>76</p>
+                                        </div>
+                                        <div class="comments-btn mx-3">
+                                            <i class="transition fa-regular fa-comment"></i>
+                                        </div>
+                                        <div class="comments-number mx-3">
+                                            <!--Fetch Number of comments here-->
+                                            <p>74</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div class="comments-wrapper">
+                                        <div class="comment">
+                                            <div class="comment-meta">
+                                                <!--fetch comment's user avatar here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                                <!--fetch comment user's name here-->
+                                                <a href="#" class="profile-hyperlink ms-2">
+                                                    <p>Shehab Adel</p>
+                                                </a>
+                                            </div>
+                                            <div class="comment-text mt-2">
+                                                <!--fetch comment text here-->
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores qui consequuntur beatae officiis ducimus sint? Temporibus libero harum obcaecati ex optio voluptas vel, voluptatibus labore doloribus reprehenderit debitis, maxime deserunt.</p>
+                                            </div>
+                                            <br/>
+                                            <div class="comment-date">
+                                            <!--fetch comment date here-->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

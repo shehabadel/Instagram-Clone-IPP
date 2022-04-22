@@ -4,17 +4,27 @@
     --main-post: #2E3141;
     --main-post-inner: #363949;
     --main-liked: #09B567;
+    --main-favorite:#d22030;
     --main-button: #688CFD;
     --main-text-color: #FFFFFF;
     --main-button-hover: #6695F2;
     --secondary-text-color: #8E93AF;
+    --secondary-background: #363949;
     --hover-transition: all 0.5s ease;
 }
 
 * {
     font-family: 'Nunito', sans-serif;
+    transition: all .32s ease !important;
+    -webkit-transition: all .32s ease !important;
+    -moz-transition: all .32s ease !important;
+    -ms-transition: all .32s ease !important;
+    -o-transition: all .32s ease !important;
 }
-
+a{
+    color: var(--main-text-color);
+    text-decoration: none;
+}
 body::-webkit-scrollbar {
     width: 12px;
     /* width of the entire scrollbar */
@@ -186,6 +196,7 @@ i[class*='fa'] {
     background-color: var(--main-background-hover) !important;
     border: none !important;
 }
+
 
 /************** End nav bar **************/
 

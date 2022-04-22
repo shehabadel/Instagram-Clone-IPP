@@ -85,13 +85,199 @@ body{
     margin-bottom: 3px;
 }
 .post-img-wrapper{
-    border-radius: 2px solid var(--main-background);
-    -webkit-border-radius: 2px solid var(--main-background);
-    -moz-border-radius: 2px solid var(--main-background);
-    -ms-border-radius: 2px solid var(--main-background);
-    -o-border-radius: 2px solid var(--main-background);
+    text-align: center;
+    background-color: var(--secondary-background);
+    padding: 30px;
 }
 .post-img{
     max-height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
+/**Start Post Interactions section**/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600,400&subset=latin,cyrillic);
+
+.click {
+	font-size: 33px;
+	color: rgb(255 255 255 / 50%);
+	width: 38px;
+	height: 38px;
+	position: relative;
+	cursor: pointer;
+}
+
+.click i {
+	margin-left: 4px;
+	margin-top: 3px;
+	z-index: 999;
+	position: absolute;
+    transition: all .32s ease;
+	right: 0;
+}
+
+.click i:hover {
+	opacity: 0.8;
+}
+
+.click i:active {
+	transform: scale(0.93,0.93) translateY(1px);
+	-webkit-transform: scale(0.93,0.93) translateY(1px);
+	-moz-transform: scale(0.93,0.93) translateY(1px);
+	-ms-transform: scale(0.93,0.93) translateY(1px);
+	-o-transform: scale(0.93,0.93) translateY(1px);
+}
+
+.click .ring, .click .ring2 {
+	opacity: 0;
+	background: grey;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	top: 19px;
+	left: 18px;
+	border-radius: 50%;
+	cursor: pointer;
+    transition: all .32s ease;
+}
+
+.click.active i, .click.active-2 i {
+	color: #f52742 !important;
+}
+
+.click.active-2 .ring {
+	width: 30px !important;
+    height: 30px !important;
+    top: -4px !important;
+    left: -4px !important;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.click.active-2 .ring {
+	background: #f52742 !important;
+}
+
+.click.active-2 .ring2 {
+	background: var(--main-background) !important;
+}
+
+.click.active-3 .ring2 {
+	width: 32px !important;
+    height: 32px !important;
+    top: -5px !important;
+    left: -5px !important;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.click .info {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: grey;
+	position: relative;
+	top: 30px;
+	left: -46px;
+	opacity: 0;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.click .info-tog {
+	color: #f52742;
+	position: relative;
+	top: 45px;
+	opacity: 1;
+}
+
+.post-interactions{
+	background-color: var(--main-background);
+    padding: 0.4rem;
+    padding-top: 1.2rem;
+	padding-left: 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+	text-align: center;
+	display: flex;
+    flex-direction: row;
+}
+
+.favorites-number{
+	position: relative;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.favorites-number span{
+	position: absolute;
+	top: 1px;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.comments-btn{
+	position: relative;
+	cursor: pointer;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.comments-btn i{
+	position: absolute;
+	top:2px;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.transition{
+	transition: all .32s ease !important;
+	-webkit-transition: all .32s ease !important;
+	-moz-transition: all .32s ease !important;
+	-ms-transition: all .32s ease !important;
+	-o-transition: all .32s ease !important;
+}
+
+.comment{
+	background-color: var(--secondary-background);
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.comment-meta{
+	display: flex;
+	flex-direction: row;
+}
+.comment-meta .avatar{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+/**End Post Interactions section**/
+
 /********** End Post **********/
