@@ -28,7 +28,13 @@ body {
     height: 300px;
     align-items: center;
     padding: 5px;
-    }
+}
+
+#grid_icon{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
 
 
 
