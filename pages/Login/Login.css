@@ -1,6 +1,6 @@
 
 *{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif  ;
 }
 .login-box {
     color: var(--main-post);  
@@ -18,7 +18,7 @@
 body {
   
     background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg,var(--main-button), var(--main-background));
-    font-family: "Roboto", sans-serif;
+  
   }
 
   
