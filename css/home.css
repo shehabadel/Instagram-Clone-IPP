@@ -269,7 +269,7 @@ body{
 	display: flex;
 	flex-direction: row;
 }
-.comment-meta .avatar{
+.comment-meta .avatar, .comment-input .avatar{
 	width: 40px;
 	height: 40px;
 	border-radius: 40px;
@@ -277,6 +277,26 @@ body{
 	-moz-border-radius: 40px;
 	-ms-border-radius: 40px;
 	-o-border-radius: 40px;
+}
+.comment-input-wrapper{
+	display: flex;
+	flex: row;
+}
+.comment-input-text{
+	margin-left: 10px;
+    border-radius: 20px;
+	padding:0 10px;
+    flex-grow: 1;
+    border: 2px solid var(--main-background);
+}
+.comment-input-text::placeholder{
+	padding: 0 10px;
+}
+.comment-input-text:focus{
+	border: 4px solid var(--secondary-background);
+}
+.comment-input-text:focus-visible{
+	border: none;
 }
 /**End Post Interactions section**/
 

@@ -148,7 +148,6 @@
                                 <div class="card-body post-data">
                                     <!--Replace fetched post text here-->
                                     <p class="card-text post-text">Hello all I wrote something new here check it 😁😁😁 out Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in totam tempora cumque laborum incidunt dolorum perferendis a ab consequuntur omnis odit distinctio tempore odio alias doloribus, consectetur illo? Voluptatibus! </p>
-                                    <!--Replace fetched post image here-->
                                     <!--Replace fetched post image src here-->
                                     <div class="post-img-wrapper">
                                         <img class="post-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/800px-Pleiades_large.jpg">
@@ -175,27 +174,38 @@
                                     <br>
                                     <hr>
                                     <div class="comments-wrapper">
-                                        <div class="comment">
+                                        <div id="commentid" class="comment mb-1">
                                             <div class="comment-meta">
                                                 <!--fetch comment's user avatar here-->
-                                                <a href="#" class="profile-hyperlink">
+                                                <a href="#" id="commentid-avatar-link">
                                                     <!--Fetch user's avatar here-->
-                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                    <img id="commentid-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
                                                 </a>
                                                 <!--fetch comment user's name here-->
-                                                <a href="#" class="profile-hyperlink ms-2">
-                                                    <p>Shehab Adel</p>
+                                                <a href="#" id="commentid-user-name-link" class="ms-2">
+                                                    <p id="commentid-user-name">Shehab Adel</p>
                                                 </a>
                                             </div>
-                                            <div class="comment-text mt-2">
+                                            <div class="comment-text my-2">
                                                 <!--fetch comment text here-->
                                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores qui consequuntur beatae officiis ducimus sint? Temporibus libero harum obcaecati ex optio voluptas vel, voluptatibus labore doloribus reprehenderit debitis, maxime deserunt.</p>
                                             </div>
-                                            <br/>
-                                            <div class="comment-date">
                                             <!--fetch comment date here-->
-                                            </div>
+                                            <span><?php echo date('D M Y') ?></span>
                                         </div>
+                                    </div>
+                                    <hr>
+                                    <div class="comment-input">
+                                        <!--Add post comment endpoint here and fetch postID-->
+                                        <form id="comment-input-form" method="POST" action="">
+                                            <div class="comment-input-wrapper">
+                                                <a href="#" id="commentinput-avatar-link" class="profile-hyperlink">
+                                                        <!--Fetch user's avatar here-->
+                                                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                                <input type="text" class="comment-input-text" placeholder="Write your comment here!">
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
