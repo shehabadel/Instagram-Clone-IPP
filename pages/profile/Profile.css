@@ -12,6 +12,17 @@ body {
     position: relative;
 }
 
+#posts_table{
+    background-color: var(--main-post-inner);
+    align-items: center;
+    align-self: center;
+    padding: 10px;
+    border:#FFFFFF ;
+    border: "4";
+    margin-left: 400px;
+    margin-top: 400px;
+}
+
 
 
 
