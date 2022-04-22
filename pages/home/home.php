@@ -111,7 +111,205 @@
                 <div id="mid-col" class="col-sm-10 col-md-8">
                     <div class="posts-wrapper">
                         <!--each post has specific id-->
-                        <div id="" class="post">
+                        <div id="post-id" class="post mb-3">
+                            <div class="card main-post text-white">
+                                <div class="card-header">
+                                    <div class="post-info">
+                                        <div class="post-info-wrapper">
+                                            <div class="post-info-avatar">
+                                                <!--Fetch user's avatar here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="post-info-meta">
+                                                <!--Fetch user's name here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <p>Shehab Adel</p>
+                                                </a>
+                                                <!--Fetch post's Date here-->
+                                                <!--Must redirects to the post's page-->
+                                                <a href="#" class="post-hyperlink">
+                                                    <p>June 16</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <!--Shows report when clicked on-->
+                                            <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                                <span>
+                                                    <i class="fa-solid fa-caret-up m-0"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body post-data">
+                                    <!--Replace fetched post text here-->
+                                    <p class="card-text post-text">Hello all I wrote something new here check it 😁😁😁 out Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in totam tempora cumque laborum incidunt dolorum perferendis a ab consequuntur omnis odit distinctio tempore odio alias doloribus, consectetur illo? Voluptatibus! </p>
+                                    <!--Replace fetched post image src here-->
+                                    <div class="post-img-wrapper">
+                                        <img class="post-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/800px-Pleiades_large.jpg">
+                                    </div>
+                                    <div class="post-interactions mt-2">
+                                        <div class="click mr-3">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <div class="ring"></div>
+                                            <div class="ring2"></div>
+                                            <p class="info">Added to favourites!</p>
+                                        </div>
+                                        <!--Fetch number of favorites here-->
+                                        <div class="favorites-number mr-3">
+                                            <p>76</p>
+                                        </div>
+                                        <div class="comments-btn mx-3">
+                                            <i class="transition fa-regular fa-comment"></i>
+                                        </div>
+                                        <div class="comments-number mx-3">
+                                            <!--Fetch Number of comments here-->
+                                            <p>74</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div class="comments-wrapper">
+                                        <div id="commentid" class="comment mb-1">
+                                            <div class="comment-meta">
+                                                <!--fetch comment's user avatar here-->
+                                                <a href="#" id="commentid-avatar-link">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="commentid-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                                </a>
+                                                <!--fetch comment user's name here-->
+                                                <a href="#" id="commentid-user-name-link" class="ms-2">
+                                                    <p id="commentid-user-name">Shehab Adel</p>
+                                                </a>
+                                            </div>
+                                            <div class="comment-text my-2">
+                                                <!--fetch comment text here-->
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores qui consequuntur beatae officiis ducimus sint? Temporibus libero harum obcaecati ex optio voluptas vel, voluptatibus labore doloribus reprehenderit debitis, maxime deserunt.</p>
+                                            </div>
+                                            <!--fetch comment date here-->
+                                            <span><?php echo date('D M Y') ?></span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="comment-input">
+                                        <!--Add post comment endpoint here and fetch postID-->
+                                        <form id="comment-input-form" method="POST" action="">
+                                            <div class="comment-input-wrapper">
+                                                <a href="#" id="commentinput-avatar-link" class="profile-hyperlink">
+                                                        <!--Fetch user's avatar here-->
+                                                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                                <input type="text" class="comment-input-text" placeholder="Write your comment here!">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="post-id" class="post mb-3">
+                            <div class="card main-post text-white">
+                                <div class="card-header">
+                                    <div class="post-info">
+                                        <div class="post-info-wrapper">
+                                            <div class="post-info-avatar">
+                                                <!--Fetch user's avatar here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="post-info-meta">
+                                                <!--Fetch user's name here-->
+                                                <a href="#" class="profile-hyperlink">
+                                                    <p>Shehab Adel</p>
+                                                </a>
+                                                <!--Fetch post's Date here-->
+                                                <!--Must redirects to the post's page-->
+                                                <a href="#" class="post-hyperlink">
+                                                    <p>June 16</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <!--Shows report when clicked on-->
+                                            <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                                <span>
+                                                    <i class="fa-solid fa-caret-up m-0"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body post-data">
+                                    <!--Replace fetched post text here-->
+                                    <p class="card-text post-text">Hello all I wrote something new here check it 😁😁😁 out Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in totam tempora cumque laborum incidunt dolorum perferendis a ab consequuntur omnis odit distinctio tempore odio alias doloribus, consectetur illo? Voluptatibus! </p>
+                                    <!--Replace fetched post image src here-->
+                                    <div class="post-img-wrapper">
+                                        <img class="post-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/800px-Pleiades_large.jpg">
+                                    </div>
+                                    <div class="post-interactions mt-2">
+                                        <div class="click mr-3">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <div class="ring"></div>
+                                            <div class="ring2"></div>
+                                            <p class="info">Added to favourites!</p>
+                                        </div>
+                                        <!--Fetch number of favorites here-->
+                                        <div class="favorites-number mr-3">
+                                            <p>76</p>
+                                        </div>
+                                        <div class="comments-btn mx-3">
+                                            <i class="transition fa-regular fa-comment"></i>
+                                        </div>
+                                        <div class="comments-number mx-3">
+                                            <!--Fetch Number of comments here-->
+                                            <p>74</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div class="comments-wrapper">
+                                        <div id="commentid" class="comment mb-1">
+                                            <div class="comment-meta">
+                                                <!--fetch comment's user avatar here-->
+                                                <a href="#" id="commentid-avatar-link">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="commentid-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                                </a>
+                                                <!--fetch comment user's name here-->
+                                                <a href="#" id="commentid-user-name-link" class="ms-2">
+                                                    <p id="commentid-user-name">Shehab Adel</p>
+                                                </a>
+                                            </div>
+                                            <div class="comment-text my-2">
+                                                <!--fetch comment text here-->
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores qui consequuntur beatae officiis ducimus sint? Temporibus libero harum obcaecati ex optio voluptas vel, voluptatibus labore doloribus reprehenderit debitis, maxime deserunt.</p>
+                                            </div>
+                                            <!--fetch comment date here-->
+                                            <span><?php echo date('D M Y') ?></span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="comment-input">
+                                        <!--Add post comment endpoint here and fetch postID-->
+                                        <form id="comment-input-form" method="POST" action="">
+                                            <div class="comment-input-wrapper">
+                                                <a href="#" id="commentinput-avatar-link" class="profile-hyperlink">
+                                                        <!--Fetch user's avatar here-->
+                                                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                </a>
+                                                <input type="text" class="comment-input-text" placeholder="Write your comment here!">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="post-id" class="post mb-3">
                             <div class="card main-post text-white">
                                 <div class="card-header">
                                     <div class="post-info">
