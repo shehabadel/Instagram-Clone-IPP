@@ -1,9 +1,268 @@
-:root{
+:root {
     --main-background: #1A1C26;
+    --main-background-hover: #2B2D3D;
     --main-post: #2E3141;
     --main-post-inner: #363949;
     --main-liked: #09B567;
+    --main-favorite:#d22030;
     --main-button: #688CFD;
     --main-text-color: #FFFFFF;
     --main-button-hover: #6695F2;
+    --secondary-text-color: #8E93AF;
+    --secondary-background: #363949;
+    --hover-transition: all 0.5s ease;
 }
+
+* {
+    font-family: 'Nunito', sans-serif;
+    transition: all .32s ease !important;
+    -webkit-transition: all .32s ease !important;
+    -moz-transition: all .32s ease !important;
+    -ms-transition: all .32s ease !important;
+    -o-transition: all .32s ease !important;
+}
+a{
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--main-button);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-background);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--main-background-hover);
+    /* creates padding around scroll thumb */
+}
+
+/************* Start UTILITIES CLASSES **************/
+.main-bg {
+    background-color: var(--main-background) !important;
+}
+
+.main-text {
+    color: var(--main-text-color) !important;
+}
+.main-post{
+    background-color: var(--main-post) !important;
+}
+.secondary-text {
+    color: var(--secondary-text-color) !important;
+}
+
+.main-button {
+    background-color: var(--main-button);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+.avatar-sm{
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 40px !important;
+	-webkit-border-radius: 40px !important;
+	-moz-border-radius: 40px !important;
+	-ms-border-radius: 40px !important;
+	-o-border-radius: 40px !important;
+}
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+i[class*='fa'] {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/************** start nav bar **************/
+
+#left-col{
+    position: sticky;
+    top: 0;
+}
+.left-col-nav .list-group-item {
+    background-color: transparent !important;
+    cursor: pointer;
+    width: auto;
+    padding: 15px;
+    color: var(--main-text-color);
+    font-weight: 500;
+    transition: var(--hover-transition);
+    -webkit-transition: var(--hover-transition);
+    -moz-transition: var(--hover-transition);
+    -ms-transition: var(--hover-transition);
+    -o-transition: var(--hover-transition);
+}
+
+.left-col-nav .list-group-item p {
+    display: inline;
+}
+
+#left-col #profile-username-name {
+    display: block;
+    width: fit-content;
+}
+
+#left-col .profile-avatar-wrapper {
+    width: fit-content;
+}
+
+@media (max-width:600px) {
+    .left-col-nav .list-group-item {
+        width: fit-content !important;
+    }
+
+    .left-col-nav .list-group-item p {
+        display: none;
+    }
+
+    #left-col #profile-username-name {
+        display: none;
+    }
+
+    .avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
+    }
+}
+
+@media (min-width:600px) {
+    .left-col-nav .list-group-item {
+        width: fit-content !important;
+    }
+
+    .left-col-nav .list-group-item p {
+        display: none;
+    }
+
+    #left-col #profile-username-name {
+        display: none;
+    }
+
+    .avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
+    }
+}
+
+@media (min-width: 768px) {
+    .left-col-nav .list-group-item {
+        width: auto !important;
+    }
+
+    .left-col-nav .list-group-item p {
+        display: inline;
+    }
+
+    #left-col #profile-username-name {
+        display: block;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        -webkit-border-radius: 80px;
+        -moz-border-radius: 80px;
+        -ms-border-radius: 80px;
+        -o-border-radius: 80px;
+    }
+}
+
+.left-col-nav .list-group-item:hover {
+    background-color: var(--main-background-hover) !important;
+}
+
+.left-col-nav .list-group-item.active {
+    background-color: var(--main-background-hover) !important;
+    border: none !important;
+}
+
+
+/************** End nav bar **************/
+
+/************** start main button **************/
+.main-button {
+    padding: 10px 40px;
+    transition: var(--hover-transition);
+    -webkit-transition: var(--hover-transition);
+    -moz-transition: var(--hover-transition);
+    -ms-transition: var(--hover-transition);
+    -o-transition: var(--hover-transition);
+}
+
+.main-button i {
+    font-size: 15px;
+}
+
+.main-button p {
+    display: inline;
+}
+
+.main-button:hover {
+    background-color: var(--main-button-hover);
+}
+
+@media (max-width:600px) {
+    .main-button {
+        padding: 10px 20px;
+        width: fit-content;
+    }
+
+    .main-button p {
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    .main-button {
+        padding: 10px 20px;
+        width: fit-content;
+    }
+
+    .main-button p {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-button {
+        padding: 10px 40px;
+        width: auto;
+    }
+
+    .main-button p {
+        display: inline;
+    }
+}
+
+/************** end main button **************/
+
+/************* End UTILITIES CLASSES **************/
