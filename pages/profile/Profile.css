@@ -47,18 +47,18 @@ color:var(--main-text-color);
 }
 
 .username{
-font-size: large;
+font-size: x-large;
 font-style: normal;
 }
 
 .name{
-font-size: x-large;
+font-size: xx-large;
 font-weight: bold;
 }
 
 
 .bio{
-    font-size: medium;
+    font-size: large;
     }
 
 #profile_pic{
@@ -106,10 +106,12 @@ font-weight: bold;
 }
 .friendlist:hover{
     background: var(--main-button-hover);
+    cursor: pointer;
 }
 
 .editprofile:hover{
     background: var(--main-button-hover);
+    cursor: pointer;
 }
 
 #editprofile_icon{
