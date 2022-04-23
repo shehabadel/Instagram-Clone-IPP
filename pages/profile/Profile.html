@@ -1,58 +1,57 @@
 <html>
-<head>
-    <title>Profile</title>
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="Profile.css">
-    <link rel="icon" href="profile-icon.png" type="image/x-icon">
-</head>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="Profile.css">
+        <link rel="icon" href="profile-icon.png" type="image/x-icon">
+    </head>
 
-<body>
-    <div class = "profile_details" align= "center"> 
-        <div class = "user">
+    <body>
+<div class="header_section">
+
+    <div class="friendlist_div" align="center" >
+        
+        <button class="friendlist" onclick="window.location.href= '../home/home.html';" > Friend List</button>
+    </div>
+
+        <div class = "profile_details" align= "center"> 
             <div> <img id="profile_pic" src="dog.png" alt="user pic"> 
             </div>
-            <p class="name"> Rex </p> 
+            <p class="name"> Doje </p> 
             <p class="username"> cool_doggo </p>
-            <p class="bio"> hi my name is doggo flocko and i really like other dogs. </br> anti-cats </br> playing catch is my passion. </br> I deeply enjoy music too. </p>
+            <p class="bio"> hi. call me doggo flocko </br>  anti-cats </br> playing catch is my passion. I deeply enjoy music too. </p>
         </div>
-    </div>
-    
-    <table id="posts_table"   align="center"  >
-        <tbody>  
-            <tr>
+
+        <div class="editprofile_div" align = "center"> 
+            <button class="editprofile" onclick="window.location.href= '../home/home.html';"> Edit Profile</button>
+        </div>
+
+         
+
+   
+</div >
+
+</div>
+    <div align="center">
+        <table id="posts_table"   >
+            <tbody>  
+                <tr>
                 <th colspan="3"><img id="grid_icon" src="grid.png"  title="Your Posts"> </th>
-            </tr>
+                </tr>
              
-            <tr>
+                <tr>
                 <td > <img id= "post_images" src="post3.jpg"></img> </td>
                 <td > <img id= "post_images" src="post1.jpg"></img> </td>
                 <td > <img id= "post_images" src="post2.jpg"></img> </td> 
-            </tr>
+                </tr>
 
-             <tr>
+                <tr>
                 <td> <img id= "post_images" src="post3.jpg"></img> </td>
                 <td> <img id= "post_images" src="post2.jpg"></img> </td>
                 <td> <img id= "post_images" src="post1.jpg"></img> </td> 
-            </tr>
-
-            <tr>
-                <td> <img id= "post_images" src="post1.jpg"></img> </td>
-                <td> <img id= "post_images" src="post2.jpg"></img> </td>
-                <td> <img id= "post_images" src="post3.jpg"></img> </td> 
-            </tr>
-
-            <tr>
-                <td> <img id= "post_images" src="post3.jpg"></img> </td>
-                <td> <img id= "post_images" src="post1.jpg"></img> </td>
-                <td> <img id= "post_images" src="post2.jpg"></img> </td> 
-            </tr>
-
-             <tr>
-                <td> <img id= "post_images" src="post3.jpg"></img> </td>
-                <td> <img id= "post_images" src="post2.jpg"></img> </td>
-                <td> <img id= "post_images" src="post1.jpg"></img> </td> 
-            </tr>
-        </tbody>
-    </table>
-     </body>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </body>
 </html>
