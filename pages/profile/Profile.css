@@ -35,7 +35,7 @@ body {
 .header_section{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: center;
 }
 
 .profile_details{
@@ -43,6 +43,7 @@ margin-top: 30px;
 margin-left: 40px;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 color:var(--main-text-color);
+
 }
 
 .username{
@@ -72,35 +73,34 @@ font-weight: bold;
 .editprofile{
     height: 60px;
     width: 200px;
-    text-align: center;
+
     text-decoration: none;
    background-color: var(--main-post-inner);
     transition: 0.25s linear;
-    padding: 20px 40px;
- 
+    
+    font-size: large;
     border-radius: 15px;
     border: #FFFFFF;
-    font-weight: bold;
+    font-weight: bolder;
 
     margin-right: 300px;
+    margin-left: 50px;
     margin-top: 250px;
-
-
 }
 .friendlist{
     height: 60px;
     width: 200px;
-    text-align: center;
-    align-items: center;
+    
     text-decoration: none;
     background-color: var(--main-post-inner);
     transition: 0.25s linear;
-    padding: 20px 40px;
     border-radius: 15px;
     border: #FFFFFF;
-    font-weight: bold;
+    font-weight: bolder;
     margin-left: 300px;
+    margin-right: 50px;
     margin-top: 250px;
+    font-size: large;
     
 }
 .friendlist:hover{
@@ -109,6 +109,20 @@ font-weight: bold;
 
 .editprofile:hover{
     background: var(--main-button-hover);
+}
+
+#editprofile_icon{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+#friendlist_icon{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-right: 10px;
 }
 
 
