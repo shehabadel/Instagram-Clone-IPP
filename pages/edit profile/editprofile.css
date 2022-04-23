@@ -1,0 +1,76 @@
+* {
+    border-radius: 2px;
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: var(--main-background);
+    position: relative;
+}
+
+div {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    background-color: var(--main-post);
+    padding: 10px;
+}
+
+#submitdiv {
+    width: fit-content;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+
+}
+
+td {
+    padding: 10px;
+    height: fit-content;
+    column-span: 1;
+    width: 100%;
+}
+
+td.tabletext {
+    width: 20%;
+}
+
+input {
+    width: 70%;
+    background-color: var(--main-background);
+    color: #FFFFFF;
+    border-color: #000000;
+    border: 7px;
+    padding: 10px;
+
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#imginput {
+    background-color: var(--main-post);
+    width: fit-content;
+    margin-top: 7px;
+    padding-left: 0px;
+}
+
+#submitbtn {
+    background-color: var(--main-button);
+    width: fit-content;
+    color: #FFFFFF;
+    border-color: #000000;
+    border: 7px;
+    padding: 10px;
+    margin-top: 30px;
+}
