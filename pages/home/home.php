@@ -43,8 +43,8 @@
                     <li class="nav-item">
                         <!--Link to post page-->
                         <a class="nav-link" href="#"><button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span>
-                            <p>Write Post</p>
-                        </button></a>
+                                <p>Write Post</p>
+                            </button></a>
                     </li>
                 </ul>
             </div>
@@ -212,8 +212,8 @@
                                         <form id="comment-input-form" method="POST" action="">
                                             <div class="comment-input-wrapper">
                                                 <a href="#" id="commentinput-avatar-link" class="profile-hyperlink">
-                                                        <!--Fetch user's avatar here-->
-                                                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
                                                 </a>
                                                 <input type="text" class="comment-input-text" placeholder="Write your comment here!">
                                             </div>
@@ -313,8 +313,8 @@
                                         <form id="comment-input-form" method="POST" action="">
                                             <div class="comment-input-wrapper">
                                                 <a href="#" id="commentinput-avatar-link" class="profile-hyperlink">
-                                                        <!--Fetch user's avatar here-->
-                                                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
                                                 </a>
                                                 <input type="text" class="comment-input-text" placeholder="Write your comment here!">
                                             </div>
@@ -414,8 +414,8 @@
                                         <form id="comment-input-form" method="POST" action="">
                                             <div class="comment-input-wrapper">
                                                 <a href="#" id="commentinput-avatar-link" class="profile-hyperlink">
-                                                        <!--Fetch user's avatar here-->
-                                                        <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
+                                                    <!--Fetch user's avatar here-->
+                                                    <img id="profile-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar profile-avatar" alt="...">
                                                 </a>
                                                 <input type="text" class="comment-input-text" placeholder="Write your comment here!">
                                             </div>
@@ -427,16 +427,76 @@
                     </div>
                 </div>
                 <div id="right-col" class="col-sm-1 col-md-2 d-none d-sm-none d-md-block">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="post-info">
-
-                            </div>
+                    <div class=" main-bg main-text">
+                        <div class="card-header secondary-text">
+                            <h4>Friends</h4>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <!--fetch list of friends here-->
+                            <div class="friends-list">
+                                <!--fetch list of friend's profile url here-->
+                                <a href="#" id="friend-url">
+                                    <div id="friend" class="friend">
+                                        <!--fetch list of friend's avatar here-->
+                                        <div class="friend-avatar">
+                                            <img id="" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                        </div>
+                                        <!--fetch list of friend's name here-->
+                                        <div class="friend-name-wrapper">
+                                            <p class="friend-name"> Shehab Adel</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" id="friend-url">
+                                    <div id="friend" class="friend">
+                                        <!--fetch list of friend's avatar here-->
+                                        <div class="friend-avatar">
+                                            <img id="" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                        </div>
+                                        <!--fetch list of friend's name here-->
+                                        <div class="friend-name-wrapper">
+                                            <p class="friend-name"> Shehab Adel</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" id="friend-url">
+                                    <div id="friend" class="friend">
+                                        <!--fetch list of friend's avatar here-->
+                                        <div class="friend-avatar">
+                                            <img id="" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                        </div>
+                                        <!--fetch list of friend's name here-->
+                                        <div class="friend-name-wrapper">
+                                            <p class="friend-name"> Shehab Adel</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" id="friend-url">
+                                    <div id="friend" class="friend">
+                                        <!--fetch list of friend's avatar here-->
+                                        <div class="friend-avatar">
+                                            <img id="" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                        </div>
+                                        <!--fetch list of friend's name here-->
+                                        <div class="friend-name-wrapper">
+                                            <p class="friend-name"> Shehab Adel</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" id="friend-url">
+                                    <div id="friend" class="friend">
+                                        <!--fetch list of friend's avatar here-->
+                                        <div class="friend-avatar">
+                                            <img id="" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+                                        </div>
+                                        <!--fetch list of friend's name here-->
+                                        <div class="friend-name-wrapper">
+                                            <p class="friend-name"> Shehab Adel</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

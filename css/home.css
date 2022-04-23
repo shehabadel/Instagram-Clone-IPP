@@ -301,3 +301,43 @@ body{
 /**End Post Interactions section**/
 
 /********** End Post **********/
+
+/********** Start Friends **********/
+.friends .avatar{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+.friend-name-wrapper{
+	align-self: center;
+}
+.friend-name{
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+.friend{
+	display: flex;
+	flex: row;
+	padding:10px;
+	margin: 14px 0;
+	background-color: var(--secondary-background);
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	cursor: pointer;
+	transition: all .32s ease !important;
+	-webkit-transition: all .32s ease !important;
+	-moz-transition: all .32s ease !important;
+	-ms-transition: all .32s ease !important;
+	-o-transition: all .32s ease !important;
+}
+.friend:hover{
+	background-color: var(--main-background-hover);
+}
+/********** End Friends ***********/
