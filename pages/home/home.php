@@ -20,34 +20,41 @@
 </head>
 
 <body class="main-bg">
-    <!--
-    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4 d-sm-block d-md-none">
         <div class="container">
-            <a class="navbar-brand" href="#">Traversy Media</a>
+            <a class="navbar-brand" href="#">Share2go</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.php">Add Feedback</a>
+                        <!--Link to home page-->
+                        <a class="nav-link" href="#"><span><i class="fa-solid fa-house"></i></span> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/feedback.php">Past Feedback</a>
+                        <!--Link to profile page-->
+                        <a class="nav-link" href="#"><span><i class="fa-solid fa-user"></i></span>Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.php">About</a>
+                        <!--Link to search page-->
+                        <a class="nav-link" href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span>Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Link to post page-->
+                        <a class="nav-link" href="#"><button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span>
+                            <p>Write Post</p>
+                        </button></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
--->
     <main class="mt-5">
         <div class="container-fluid mt-5">
             <div class="row">
                 <!--Start Side Navigation Bar-->
-                <div id="left-col" class="col-sm-1 col-md-2">
+                <div id="left-col" class="col-sm-1 col-md-2 d-none d-sm-none d-md-block">
                     <div class="card bg-transparent main-text border-0 profile-card">
                         <div class="card-header border-0 profile-avatar-wrapper">
                             <!--Redirects to user's profile-->
@@ -91,7 +98,7 @@
                                 </a>
                             </li>
                             <li class="list-group-item">
-                                <!--Link to home page-->
+                                <!--Link to search page-->
                                 <a href="#">
                                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                                     <p>
@@ -102,9 +109,12 @@
                         </ul>
                     </div>
                     <div class="mt-5 write-post-wrapper">
-                        <button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span>
-                            <p>Write Post</p>
-                        </button>
+                        <!--Link to post page-->
+                        <a href="#">
+                            <button id="write-post-btn" class="btn main-button main-text"><span><i class="fa-solid fa-pen"></i></span>
+                                <p>Write Post</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <!--End Side Navigation Bar-->
@@ -135,13 +145,15 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div>
-                                            <!--Shows report when clicked on-->
-                                            <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                                <span>
-                                                    <i class="fa-solid fa-caret-up m-0"></i>
-                                                </span>
-                                            </button>
+                                        <div class="post-flag">
+                                            <form>
+                                                <!--report post-->
+                                                <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                                    <span class="flagIcon">
+                                                        <i class="fa-regular fa-flag"></i>
+                                                    </span>
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -234,13 +246,15 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div>
-                                            <!--Shows report when clicked on-->
-                                            <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                                <span>
-                                                    <i class="fa-solid fa-caret-up m-0"></i>
-                                                </span>
-                                            </button>
+                                        <div class="post-flag">
+                                            <form>
+                                                <!--report post-->
+                                                <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                                    <span class="flagIcon">
+                                                        <i class="fa-regular fa-flag"></i>
+                                                    </span>
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -333,13 +347,15 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div>
-                                            <!--Shows report when clicked on-->
-                                            <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                                <span>
-                                                    <i class="fa-solid fa-caret-up m-0"></i>
-                                                </span>
-                                            </button>
+                                        <div class="post-flag">
+                                            <form>
+                                                <!--report post-->
+                                                <button type="button" class="btn btn-secondary text-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                                    <span class="flagIcon">
+                                                        <i class="fa-regular fa-flag"></i>
+                                                    </span>
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -410,7 +426,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="right-col" class="col-sm-1 col-md-2">
+                <div id="right-col" class="col-sm-1 col-md-2 d-none d-sm-none d-md-block">
                     <div class="card">
                         <div class="card-header">
                             <div class="post-info">
