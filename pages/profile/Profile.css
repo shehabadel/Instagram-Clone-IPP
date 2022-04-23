@@ -19,12 +19,18 @@ body {
 
 }
 
-#post_images{
+.post_images{
     width: 300px;
     height: 300px;
     align-items: center;
     padding: 5px;
 }
+
+.post_images:hover{
+    cursor: pointer;
+}
+
+
 
 #grid_icon{
     width: 30px;
