@@ -1,13 +1,13 @@
 :root {
     --main-background: #1A1C26;
-    --main-background-hover: #2B2D3D;
+    --main-background-hover: #252735;
     --main-post: #2E3141;
     --main-post-inner: #363949;
     --main-liked: #09B567;
     --main-favorite:#d22030;
     --main-button: #688CFD;
     --main-text-color: #FFFFFF;
-    --main-button-hover: #6695F2;
+    --main-button-hover: #436fc8;
     --secondary-text-color: #8E93AF;
     --secondary-background: #363949;
     --hover-transition: all 0.5s ease;

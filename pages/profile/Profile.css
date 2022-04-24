@@ -5,44 +5,80 @@
     color: #FFFFFF;
 
 }
-
 body {
     background-color: var(--main-background);
     position: relative;
 }
 
-#posts_table{
-    background-color: var(--main-post-inner);
-    padding: 10px;
-    border:#FFFFFF ;
-    border: "4";
-
+.posts_table {
+    background-color: var(--main-post-inner);    
 }
 
 .post_images{
     width: 300px;
     height: 300px;
     align-items: center;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:#FFFFFF ;
+    border: "4";
+    
+}
+.post_images_center{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:#FFFFFF ;
+    border: "4";
+    
 }
 
 .post_images:hover{
     cursor: pointer;
 }
 
-
+.post_images_center:hover{
+    cursor: pointer;
+}
 
 #grid_icon{
     width: 30px;
     height: 30px;
-    align-self: center;
 }
 
-.header_section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.grid_panel_container{
+display: flex;
+position: sticky;
+top:0; 
+padding-bottom: 10px;
+width: 905px;
+height: 60px;
+justify-content: center;
+margin: 0 auto;
 }
+
+.grid_panel{
+
+background-color: var(--main-post-inner);
+padding-top: 10px;
+padding-bottom: 10px;
+width: 905px;
+text-align: center;
+
+transition: 0.25s linear;
+
+
+}
+
+.grid_panel:hover{
+background: var(--main-background-hover);
+cursor: pointer;
+}
+
 
 .profile_details{
 margin-top: 30px;
@@ -63,10 +99,6 @@ font-weight: bold;
 }
 
 
-.bio{
-    font-size: large;
-    }
-
 #profile_pic{
     height: 150px;
     width:150px ;
@@ -77,40 +109,27 @@ font-weight: bold;
 }
 
 .editprofile{
-    height: 60px;
-    width: 200px;
-
-    text-decoration: none;
-   background-color: var(--main-post-inner);
+    height: 65px;
+    width: 180px;
+   background-color: var(--main-button);
     transition: 0.25s linear;
-    
     font-size: large;
-    border-radius: 15px;
+    border-radius:3px;
     border: #FFFFFF;
     font-weight: bolder;
-
-    margin-right: 300px;
-    margin-left: 50px;
-    margin-top: 250px;
-    
+    text-align: center;
 }
 .friendlist{
-    height: 60px;
-    width: 200px;
-    
-    text-decoration: none;
-    background-color: var(--main-post-inner);
+    height: 65px;
+    width: 180px;
+    background-color: var(--main-button);
     transition: 0.25s linear;
-    border-radius: 15px;
+    border-radius: 3px;
     border: #FFFFFF;
     font-weight: bolder;
-    margin-left: 300px;
-    margin-right: 50px;
-    margin-top: 250px;
+    text-align: center;
     font-size: large;
-
-    
-
+    margin-right: 0px;
     
 }
 .friendlist:hover{
@@ -124,19 +143,72 @@ font-weight: bold;
 }
 
 #editprofile_icon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+
 }
 
 #friendlist_icon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.header_section{
+display: flex;
+flex-direction: row;
+width: 905px;
+}
+
+.pic-username-name{
+display: flex;
+flex-direction: column;
+justify-content: left;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: 70px;
+width: 905px;
+}
+
+.bio-button-div{
+display: flex;
+direction: coloumn;
+justify-content: center;
+
 
 }
+
+.bio{ padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    width: 700px;
+    margin-top: 50px;
+}
+
+.buttons-div{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+
+}
+
+
+
 
 
 
