@@ -1,0 +1,12 @@
+@import "index.css"; 
+
+* {
+    border-radius: 2px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #FFFFFF;
+
+}
+body {
+    background-color: var(--main-background);
+    position: relative;
+}
