@@ -1,0 +1,85 @@
+
+*{
+  font-family: 'Nunito', sans-serif;
+}
+body {
+    background: linear-gradient(45deg, var(--main-background),transparent) ,repeating-linear-gradient(45deg,var(--main-button), var(--main-background));
+
+  }
+  
+  .signup-box {
+    width: 350px;
+    height: 800px;
+    margin: auto;
+    background: linear-gradient(45deg,var(--main-background),var(--main-post),var(--main-background));
+    border-radius: 15px;
+  }
+  
+  
+  h1 {
+  
+    color: var(--main-text-color);
+    text-align: center;
+    padding-top: 15px;
+  
+  }
+  
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    color: var(--main-text-color);
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  
+  }
+ 
+
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+  }
+  input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 30px;
+    border: none;
+    background-color: var(--main-button);
+    color: white;
+    font-size: 18px;
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+    color: var(--main-text-color);
+    margin-top: 30px;
+  }
+
+  a{
+    color: var(--main-button);
+    text-decoration: underline;
+    text-align: center;
+}
+
+a:visited{
+    color: blueviolet;
+
+}
+
+a:hover{
+    color:var(--main-button-hover);
+    text-decoration: underline;
+
+}
+
+
+
+  
+  

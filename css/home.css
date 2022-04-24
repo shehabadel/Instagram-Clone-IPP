@@ -1,0 +1,343 @@
+html{
+    background-color: var(--main-background);
+}
+body{
+    background-color: var(--main-background) !important;
+}
+.posts-wrapper::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.posts-wrapper::-webkit-scrollbar-track {
+    background: var(--main-button);
+    /* color of the tracking area */
+}
+
+.posts-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--main-background);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--main-background-hover);
+    /* creates padding around scroll thumb */
+}
+
+.write-post-wrapper{
+    text-align: center;
+}
+@media (max-width:600px) {
+    .write-post-wrapper{
+        text-align: left;
+    }
+}
+
+@media (min-width:600px) {
+    
+    .write-post-wrapper{
+        text-align: left;
+    }
+    
+}
+@media (min-width: 768px) {
+    .write-post-wrapper{
+        text-align: center;
+    }
+}
+.profile-card{
+    font-weight: 500;
+}
+
+#right-col{
+    position: sticky;
+    top: 0;
+}
+
+/********** Start Post **********/
+.posts-wrapper{
+    /* overflow-y: scroll; */
+    width: 100%;
+}
+.post-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-info-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.post-info-avatar .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.post-info-meta{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.post-info-meta p{
+    margin-bottom: 3px;
+}
+.post-img-wrapper{
+    text-align: center;
+    background-color: var(--secondary-background);
+    padding: 30px;
+}
+.post-img{
+    max-height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/**Start Post Interactions section**/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600,400&subset=latin,cyrillic);
+
+.click {
+	font-size: 33px;
+	color: rgb(255 255 255 / 50%);
+	width: 38px;
+	height: 38px;
+	position: relative;
+	cursor: pointer;
+}
+
+.click i {
+	margin-left: 4px;
+	margin-top: 3px;
+	z-index: 999;
+	position: absolute;
+    transition: all .32s ease;
+	right: 0;
+}
+
+.click i:hover {
+	opacity: 0.8;
+}
+
+.click i:active {
+	transform: scale(0.93,0.93) translateY(1px);
+	-webkit-transform: scale(0.93,0.93) translateY(1px);
+	-moz-transform: scale(0.93,0.93) translateY(1px);
+	-ms-transform: scale(0.93,0.93) translateY(1px);
+	-o-transform: scale(0.93,0.93) translateY(1px);
+}
+
+.click .ring, .click .ring2 {
+	opacity: 0;
+	background: grey;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	top: 19px;
+	left: 18px;
+	border-radius: 50%;
+	cursor: pointer;
+    transition: all .32s ease;
+}
+
+.click.active i, .click.active-2 i {
+	color: #f52742 !important;
+}
+
+.click.active-2 .ring {
+	width: 30px !important;
+    height: 30px !important;
+    top: -4px !important;
+    left: -4px !important;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.click.active-2 .ring {
+	background: #f52742 !important;
+}
+
+.click.active-2 .ring2 {
+	background: var(--main-background) !important;
+}
+
+.click.active-3 .ring2 {
+	width: 32px !important;
+    height: 32px !important;
+    top: -5px !important;
+    left: -5px !important;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.click .info {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: grey;
+	position: relative;
+	top: 30px;
+	left: -46px;
+	opacity: 0;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.click .info-tog {
+	color: #f52742;
+	position: relative;
+	top: 45px;
+	opacity: 1;
+}
+
+.post-interactions{
+	background-color: var(--main-background);
+    padding: 0.4rem;
+    padding-top: 1.2rem;
+	padding-left: 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+	text-align: center;
+	display: flex;
+    flex-direction: row;
+}
+
+.favorites-number{
+	position: relative;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.favorites-number span{
+	position: absolute;
+	top: 1px;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.comments-btn{
+	position: relative;
+	cursor: pointer;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.comments-btn i{
+	position: absolute;
+	top:2px;
+	transition: all .32s ease;
+	-webkit-transition: all .32s ease;
+	-moz-transition: all .32s ease;
+	-ms-transition: all .32s ease;
+	-o-transition: all .32s ease;
+}
+.transition{
+	transition: all .32s ease !important;
+	-webkit-transition: all .32s ease !important;
+	-moz-transition: all .32s ease !important;
+	-ms-transition: all .32s ease !important;
+	-o-transition: all .32s ease !important;
+}
+
+.comment{
+	background-color: var(--secondary-background);
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.comment-meta{
+	display: flex;
+	flex-direction: row;
+}
+.comment-meta .avatar, .comment-input .avatar{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+.comment-input-wrapper{
+	display: flex;
+	flex: row;
+}
+.comment-input-text{
+	margin-left: 10px;
+    border-radius: 20px;
+	padding:0 10px;
+    flex-grow: 1;
+    border: 2px solid var(--main-background);
+}
+.comment-input-text::placeholder{
+	padding: 0 10px;
+}
+.comment-input-text:focus{
+	border: 4px solid var(--secondary-background);
+}
+.comment-input-text:focus-visible{
+	border: none;
+}
+/**End Post Interactions section**/
+
+/********** End Post **********/
+
+/********** Start Friends **********/
+.friends .avatar{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+.friend-name-wrapper{
+	align-self: center;
+}
+.friend-name{
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+.friend{
+	display: flex;
+	flex: row;
+	padding:10px;
+	margin: 14px 0;
+	background-color: var(--secondary-background);
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	cursor: pointer;
+	transition: all .32s ease !important;
+	-webkit-transition: all .32s ease !important;
+	-moz-transition: all .32s ease !important;
+	-ms-transition: all .32s ease !important;
+	-o-transition: all .32s ease !important;
+}
+.friend:hover{
+	background-color: var(--main-background-hover);
+}
+/********** End Friends ***********/
