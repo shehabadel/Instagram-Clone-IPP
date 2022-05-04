@@ -19,7 +19,7 @@ body{
 
   
   body.active{
-  background: #fff;
+  background: var(--main-background);
   
   }
   
