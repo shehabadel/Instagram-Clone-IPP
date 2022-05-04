@@ -71,7 +71,7 @@ padding: 10px 20px;
 
 }
 
-  .blueBg .box {
+  .Bg1 .box {
     position: relative;
     width: 50%; 
     height: 100%;
@@ -81,26 +81,125 @@ padding: 10px 20px;
     flex-direction: column;
     }
     
-    .blueBg .box h2{
+    .Bg1 .box h2{
     color: #fff ;
     font-size: large;
     margin-bottom: 10px;
     }
     
-    .blueBg .box button{
+    .Bg1 .box button{
     cursor: pointer;
     padding: 10px 20px;
-    background: #fff;
-    color:var(--main-button); 
+    background: var(--main-button);
+    color:#fff; 
     border-radius: 20px;
     font-size: 16px;
     font-weight: bold;
     border: none;
     }
 
-    .blueBg .box button:hover{
+    .Bg1 .box button:hover{
       cursor: pointer;
-      color: var(--main-button-hover);
+      background: var(--main-button-hover);
     }
 
+
+    .formBox{
+      position: absolute;
+      top: 0; 
+      left:0; 
+      width: 50%;
+      height: 100%;
+      background: var(--main-post-inner);
+      z-index: 1000; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+      }
+      
+      .formBox.active {
+           left: 50%;
+      
+      }
+      
+      .formBox .form{
+      position: absolute;
+      left: 0;
+      width:100%;
+      padding: 50px;
+      transition: 0.5s;
+      }
+      .formBox .imageForm{
+          transition-delay:0.25s ; 
+           }
+      
+      .formBox.active .imageForm{
+          left: -100%;
+          transition-delay:0s ;
+      }
+       
+      .formBox .form form {
+         width: 100%;
+         display: flex;
+         flex-direction:column ;
+      }
+      
+      .formBox .form form h3{
+      font-size: 1.5em;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: 500;
+      }
+      
+      .formBox .form form input{
+         width: 100%;
+         margin-bottom: 20px;
+         outline: none;
+         font-size: 16px;
+         border: 1px solid #fff;
+         color: #fff;
+         background-color: var(--main-post-inner);
+      }
+      
+      .formBox .form form input[type="submit"]
+      {
+          background: var(--main-button);
+          border: none;
+          color: #fff;
+          max-width: 100px;
+          cursor: pointer;
+         
+          padding: 10px 20px;
+          background: var(--main-button);
+          color:#fff; 
+          border-radius: 20px;
+          font-size: 16px;
+          font-weight: bold;
+          border: none;
+      }
+
+      .formBox .form form input[type="submit"]:hover{
+        cursor: pointer;
+        background: var(--main-button-hover);
+      }
+      
+      .formBox .captionForm{
+      left: 100%;
+      transition-delay: 0s;
+      
+      }
+      
+      .formBox.active .captionForm{
+          left:0;
+          transition-delay: 0.25s;
+      }
+      
+      .formBox.active .captionForm input[type="submit"]
+      {
+          background: var(--main-button);
+      
+      }
     
