@@ -1,4 +1,51 @@
+@import "index.css"; 
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-@import "index.css";
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100;
+  background:var(--main-background);
+  transition: 0.5s; 
+  position: relative;
+  }
 
+  * {
+    border-radius: 2px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #FFFFFF;
+
+}
+
+  
+  body.active{
+  background: #fff;
+  
+  }
+  
+  .container {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      margin: 20px;
+  }
+  
+  .Bg1{
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:420px; 
+  background: var(--main-background);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+  }
+
+  .imageBtn{
+
+    background-color: var(--main-button);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+  }
