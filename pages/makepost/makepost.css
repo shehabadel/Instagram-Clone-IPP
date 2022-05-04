@@ -1,12 +1,4 @@
-@import "index.css"; 
 
-* {
-    border-radius: 2px;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: #FFFFFF;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import "index.css";
 
-}
-body {
-    background-color: var(--main-background);
-    position: relative;
-}
