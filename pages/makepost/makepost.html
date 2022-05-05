@@ -77,30 +77,45 @@
 <div class="container2">
 	<div  class="Bg1">
 		<div class="box image">
-		<h2> show the world what youre up to. <br/> make a post now!</h2>
-		<button class="imageBtn"> upload image</button>
+		<h1>  make a post now! <br/> show the world what you're up to.</h1>
+		<button class="imageBtn"> Upload Image</button>
 	</div>
 
 	<div class="box caption">
-		<h2>  wanna say something about this picture?</h2>
-		<button class="captionBtn"> add caption</button>
+		<h1 class="h1padding">  Wanna say something about this picture?</h1>
+	
+		<button class="captionBtn"> Add Caption</button>
+		<h1 class="underlineme"> or</h1>
+		<input id="postwocap" type="submit" value="Post without Caption">
 	</div>
 	</div>
 
 	<div class=" formBox">
 		<div class="form imageForm">
 			<form> 
-				<h3> upload image </h3>
-				<input type="file"></input>
-				<input type="submit" value="upload">
+				<h1> Upload Image </h1>
+		
+
+				<div class="uploadimgdiv"><img id= uploadphoto src="image.png" alt="Upload Photo"></div>
+				<div class="arrowimg" ><img id="arrow" src="arrow.png" alt="arrow"> </div>
+				
+				<div class="button-container">
+					<div class="button-wrap">
+					  <label class="upload-button" for="files">Choose Image</label>
+					  <input id="upload" type="file" hidden multiple>
+					  <input id="files" type="file" accept="image/*"   hidden multiple />
+						<output id="list"></output>
+					</div>
+				  </div>
 			</form>
 		</div>
 
 		<div class="form captionForm">
 			<form> 
-				<h3> add text </h3>
-			   <textarea rows="10 cols=10"> caption</textarea>
-				<input type="submit" value="upload">
+				<h1> Add Text <div class="blinking"><img id="cursor" src="cursor.png" alt="cursor"> </div> </h1>
+				
+			   <textarea rows="15 cols=15"> </textarea>
+				<input type="submit" value="Post">
 			</form>
 		</div>
 	</div>

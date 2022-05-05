@@ -15,6 +15,41 @@ body{
     font-family: 'Trebuchet MS', sans-serif;
     color: #FFFFFF;
 
+
+}
+
+
+
+h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.h1padding{
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 260px;
+}
+
+
+.underlineme{
+  text-decoration: underline;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
   
@@ -25,8 +60,8 @@ body{
   
   .container2 {
       position: relative;
-      width: 800px;
-      height: 500px;
+      width: 1000px;
+      height: 800px;
       margin: 20px;
   }
   
@@ -37,7 +72,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height:420px; 
+  height:720px; 
   background: var(--main-background);
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
   }
@@ -71,6 +106,25 @@ padding: 10px 20px;
 
 }
 
+#postwocap{
+ 
+    display: inline-block;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--main-button);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    margin-top: 80px;
+
+
+  }
+
   .Bg1 .box {
     position: relative;
     width: 50%; 
@@ -88,12 +142,12 @@ padding: 10px 20px;
     }
     
     .Bg1 .box button{
-    cursor: pointer;
+    
     padding: 10px 20px;
     background: var(--main-button);
     color:#fff; 
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     }
@@ -148,7 +202,7 @@ padding: 10px 20px;
       }
       
       .formBox .form form h3{
-      font-size: 1.5em;
+      
       color: #fff;
       margin-bottom: 20px;
       font-weight: 500;
@@ -158,7 +212,7 @@ padding: 10px 20px;
          width: 100%;
          margin-bottom: 20px;
          outline: none;
-         font-size: 16px;
+         font-size: 20px;
          border: 1px solid #fff;
          color: #fff;
          background-color: var(--main-post-inner);
@@ -169,21 +223,21 @@ padding: 10px 20px;
           background: var(--main-button);
           border: none;
           color: #fff;
-          max-width: 100px;
-          cursor: pointer;
-         
-          padding: 10px 20px;
+          width: 200px;
+          padding: 10px 10px;
           background: var(--main-button);
           color:#fff; 
           border-radius: 20px;
-          font-size: 16px;
+          font-size: 20px;
           font-weight: bold;
           border: none;
+         margin-left: 100px;
       }
 
       .formBox .form form input[type="submit"]:hover{
         cursor: pointer;
         background: var(--main-button-hover);
+        cursor: pointer;
       }
       
       .formBox .captionForm{
@@ -203,3 +257,119 @@ padding: 10px 20px;
       
       }
     
+      @keyframes updown {
+        0% {
+          transform: translateY(-10%);
+        }
+      
+        50% {
+          transform: translateY(10%);
+        }
+      
+        100% {
+          transform: translateY(-10%);
+        }
+      }
+       
+      #uploadphoto{
+        height: 250px;
+        width: 250px;
+        align-self: center;
+        margin-top: 150px;
+      }
+      #arrow{
+        width: 80px;
+        height: 80px;
+        animation: updown 1s ease infinite;
+        margin-bottom: 100px;
+     
+      }
+
+      #cursor{
+      width: 40px;
+      height: 40px;
+
+   
+    }
+
+    .blinking{
+      animation:blinkingCursor 1.5s ease infinite;
+  }
+
+  @keyframes blinkingCursor{
+
+      0%{    opacity: 1;    }
+      25%{   opacity: 0;   }
+      50%{    opacity: 1;   }
+      75%{   opacity: 0;   }
+      100%{   opacity: 1;      }
+  }
+
+      .uploadimgdiv{
+        align-self: center;
+
+      }
+
+      .arrowimg{
+        margin-top: -49px;
+        margin-left: 277px
+      }
+
+      textarea{
+        align-items: center;
+        padding-left:  20px;
+        padding-right:  20px;
+        padding-top:  10px;
+        padding-bottom:  10px;
+        align-items: center;
+        background-color: var(--main-post-inner);
+        border: 2px solid #fff;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        cursor:text;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 8px;
+    font-size: 20px;
+    color: var(--main-background)
+  }
+  
+  .button-wrap {
+    position: relative;
+  }
+  
+  .upload-button {
+    display: inline-block;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--main-button);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+
+
+  }
+
+  .upload-button:hover{
+
+    cursor: pointer;
+    background: var(--main-button-hover);
+  }
+  
+        
+        
