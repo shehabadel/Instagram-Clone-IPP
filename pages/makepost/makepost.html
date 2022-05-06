@@ -77,12 +77,12 @@
 <div class="container2">
 	<div  class="Bg1">
 		<div class="box image">
-		<h1>  make a post now! <br/> show the world what you're up to.</h1>
+		<h1>  make a post now! </h1>
 		<button class="imageBtn"> Upload Image</button>
 	</div>
 
 	<div class="box caption">
-		<h1 class="h1padding">  Wanna say something about this picture?</h1>
+		<h1>  Wanna say something about this picture?</h1>
 	
 		<button class="captionBtn"> Add Caption</button>
 		<h1 class="underlineme"> or</h1>
@@ -92,26 +92,26 @@
 
 	<div class=" formBox">
 		<div class="form imageForm">
-			<form> 
+			<form id="imageform"> 
 				<h1> Upload Image </h1>
-		
-
-				<div class="uploadimgdiv"><img id= uploadphoto src="image.png" alt="Upload Photo"></div>
-				<div class="arrowimg" ><img id="arrow" src="arrow.png" alt="arrow"> </div>
-				
-				<div class="button-container">
-					<div class="button-wrap">
-					  <label class="upload-button" for="files">Choose Image</label>
-					  <input id="upload" type="file" hidden multiple>
-					  <input id="files" type="file" accept="image/*"   hidden multiple />
-						<output id="list"></output>
-					</div>
-				  </div>
+				<div class="grid">
+					<div class="form-element">
+					  <input type="file" id="file-1" accept="image/*">
+					  <label for="file-1" id="file-1-preview">
+						
+						<img src="image.png" alt="">
+						<div class="arrowimg" ><img id="arrow" src="arrow.png" alt="arrow"> </div>
+						
+						<div class="button-container"> 
+							<input id="file-1" type="file" accept="image/*" hidden multiple/>
+							<label class="upload-button" for="file-1">Choose Image</label>
+						</div>
+					  </label>
 			</form>
 		</div>
 
 		<div class="form captionForm">
-			<form> 
+			<form id="textform"> 
 				<h1> Add Text <div class="blinking"><img id="cursor" src="cursor.png" alt="cursor"> </div> </h1>
 				
 			   <textarea rows="15 cols=15"> </textarea>
@@ -154,6 +154,26 @@
         formBox.classList.remove('active')
         body.classList.remove('active')
     }
+
+
+</script>
+
+<script>
+
+function previewBeforeUpload(id){
+  document.querySelector("#"+id).addEventListener("change",function(e){
+    if(e.target.files.length == 0){
+      return;
+    }
+    let file = e.target.files[0];
+    let url = URL.createObjectURL(file);
+    document.querySelector("#"+id+"-preview div").innerText = file.name;
+    document.querySelector("#"+id+"-preview img").src = url;
+  });
+}
+
+previewBeforeUpload("file-1");
+
 
 
 </script>

@@ -14,32 +14,19 @@ body{
     border-radius: 2px;
     font-family: 'Trebuchet MS', sans-serif;
     color: #FFFFFF;
-
-
 }
 
 
 
 h1{
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 35px;
   color: #FFFFFF;
   text-align: center;
-  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-
-.h1padding{
-  font-size: 40px;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-align: center;
-  padding-bottom: 20px;
-  margin-top: 260px;
-}
 
 
 .underlineme{
@@ -83,6 +70,7 @@ background: var(--main-button);
 border: none;
 border-radius: 20px;
 padding: 10px 20px;
+width: 250px;
 
 }
 
@@ -93,6 +81,8 @@ background: var(--main-button);
 border: none;
 border-radius: 20px;
 padding: 10px 20px;
+width: 250px;
+
 }
 
 .imageBtn:hover{
@@ -200,17 +190,11 @@ padding: 10px 20px;
          display: flex;
          flex-direction:column ;
       }
-      
-      .formBox .form form h3{
-      
-      color: #fff;
-      margin-bottom: 20px;
-      font-weight: 500;
-      }
+    
       
       .formBox .form form input{
          width: 100%;
-         margin-bottom: 20px;
+        
          outline: none;
          font-size: 20px;
          border: 1px solid #fff;
@@ -231,7 +215,9 @@ padding: 10px 20px;
           font-size: 20px;
           font-weight: bold;
           border: none;
-         margin-left: 100px;
+         margin-left: 80px;
+         margin-top: 30px;
+         width: 250px;
       }
 
       .formBox .form form input[type="submit"]:hover{
@@ -247,7 +233,7 @@ padding: 10px 20px;
       }
       
       .formBox.active .captionForm{
-          left:0;
+          left:100%;
           transition-delay: 0.25s;
       }
       
@@ -272,16 +258,16 @@ padding: 10px 20px;
       }
        
       #uploadphoto{
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
         align-self: center;
-        margin-top: 150px;
+      
       }
       #arrow{
         width: 80px;
         height: 80px;
         animation: updown 1s ease infinite;
-        margin-bottom: 100px;
+        
      
       }
 
@@ -311,8 +297,8 @@ padding: 10px 20px;
       }
 
       .arrowimg{
-        margin-top: -49px;
-        margin-left: 277px
+        margin-top: -150px;
+        margin-left: 250px
       }
 
       textarea{
@@ -324,9 +310,8 @@ padding: 10px 20px;
         align-items: center;
         background-color: var(--main-post-inner);
         border: 2px solid #fff;
-        margin-top: 100px;
-        margin-bottom: 100px;
         cursor:text;
+        
   }
 
   .button-container {
@@ -351,16 +336,18 @@ padding: 10px 20px;
   
   .upload-button {
     display: inline-block;
-   padding-top: 10px;
-   padding-bottom: 10px;
-    border-radius: 20px;
-    background-color: var(--main-button);
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    width: 200px;
-    height: 50px;
-    text-align: center;
+    padding-top: 10px;
+     border-radius: 20px;
+     background-color: var(--main-button);
+     font-size: 20px;
+     font-weight: bold;
+     color: #fff;
+     width: 250px;
+     height: 50px;
+     text-align: center;
+     border: none;
+     margin-top: 480px;
+     margin-left: 30px;
 
 
   }
@@ -370,6 +357,47 @@ padding: 10px 20px;
     cursor: pointer;
     background: var(--main-button-hover);
   }
+
+
+
+
+
+  .form .grid {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  .form .grid .form-element {
+    width:600px;
+    height:600px;
   
-        
-        
+  }
+  .form .grid .form-element input {
+    display:none;
+  }
+  .form .grid .form-element img {
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    margin-left: 60px;
+    margin-top: 80px;
+
+   
+  }
+  .form .grid .form-element div {
+    position:relative;
+    height:0px;
+    background:var(--main-post-inner);
+    text-align:center;
+    color:transparent; 
+  
+  }
+  .form .grid .form-element div span {
+  display: none;
+  }
+
+ 
+
+ 
+  
