@@ -1,7 +1,7 @@
 * {
     border-radius: 2px;
-    font-family: 'Nunito', sans-serif;
-    color: #FFFFFF;
+    /*font-family: 'Nunito', sans-serif;*/
+    color: var(--main-text-color);
 }
 
 body {
