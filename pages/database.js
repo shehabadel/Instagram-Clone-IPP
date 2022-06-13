@@ -5,7 +5,8 @@ var ourData = [{
     "email": "123@456.com",
     "password": "12345",
     "phoneNum": "0123456789",
-    "loggedIn": false
+    "loggedIn": false,
+    "Admin" :false
 },{
     "username": "ola",
     "displayName": "Ola Alnajjar",
@@ -13,7 +14,8 @@ var ourData = [{
     "email": "123@456.com",
     "password": "12345",
     "phoneNum": "0123456789",
-    "loggedIn": false
+    "loggedIn": false,
+    "Admin" :true
 },{
     "username": "reem",
     "displayName": "Reem Aboushama",
@@ -21,7 +23,8 @@ var ourData = [{
     "email": "123@456.com",
     "password": "12345",
     "phoneNum": "0123456789",
-    "loggedIn": true
+    "loggedIn": true,
+    "Admin" :false
 }];
 
 var datacount=1;

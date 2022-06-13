@@ -9,7 +9,7 @@ body {
   
   .signup-box {
     width: 350px;
-    height: 800px;
+    height: 720px;
     margin: auto;
     background: linear-gradient(45deg,var(--main-background),var(--main-post),var(--main-background));
     border-radius: 15px;
@@ -46,32 +46,41 @@ body {
     border-radius: 15px;
     outline: none;
   }
+
   input[type="button"] {
     width: 320px;
     height: 35px;
-    margin-top: 30px;
+    margin-top: 20px;
     border: none;
     background-color: var(--main-button);
     color: white;
     font-size: 18px;
   }
+
   p {
     text-align: center;
     font-size: 15px;
     color: var(--main-text-color);
-    margin-top: 30px;
+    margin-top: 15px;
+  }
+
+  .errormsg{
+    color:red;
+    opacity: 0;
+  }
+
+  .astr{
+    color:red;
+    font-size: 10px;
+    opacity: 0;
   }
 
   a{
     color: var(--main-button);
     text-decoration: underline;
     text-align: center;
-}
+  }
 
-a:visited{
-    color: blueviolet;
-
-}
 
 a:hover{
     color:var(--main-button-hover);
