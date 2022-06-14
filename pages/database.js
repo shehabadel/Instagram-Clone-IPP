@@ -25,6 +25,15 @@ var ourData = [{
     "phoneNum": "0123456789",
     "loggedIn": true,
     "Admin" :false
+},{
+    "username": "hossam",
+    "displayName": "Hossam Mansour",
+    "profilePic": "../../assets/profiles/profile-4.png",
+    "email": "123@456.com",
+    "password": "12345",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false
 }];
 
 var datacount=1;

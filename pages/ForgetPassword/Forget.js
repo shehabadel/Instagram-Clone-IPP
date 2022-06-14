@@ -19,6 +19,4 @@ function forget(email,numb){
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Please Enter Email and Phone Number";
     }
-
-   
 }
