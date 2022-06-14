@@ -56,6 +56,14 @@ function signup (name , username , email , numb , pass , passconf , admin){
         }
     }
 
+    console.log("signup button clicked");
+    for (var i = 0; i < ourData.length; i++) 
+            console.log(ourData[i]);
+
+    alert("Your data is added successfully!");
+
+    
+    }
    
 
-}
+

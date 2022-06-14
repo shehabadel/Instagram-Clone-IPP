@@ -5,13 +5,17 @@ function signin(user,pass){
             j=i;
         }
     }
-    if (j == -1 || ourData[j].Admin==true){
+   
+    if (j == -1 || ourData[j].Admin==true ){
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Username or Password";
     }else if (ourData[j].password==pass && ourData[j].Admin==false){
         window.location.replace("../search and explore/search.html");
          /// CHANGE PAGE TRANSITION TO HOME PAGE
         ourData[j].loggedIn= true;
+    }else{
+        document.getElementById("error").style.opacity= 100;
+        document.getElementById("error").textContent= "Incorrect Username or Password";
     }
 
     if (!user | !pass){
@@ -36,6 +40,9 @@ function signAdminin(user,pass){
         window.location.replace("../search and explore/search.html");
          /// CHANGE PAGE TRANSITION TO ADMIN HOME PAGE
         ourData[j].loggedIn= true;
+    }else{
+        document.getElementById("error").style.opacity= 100;
+        document.getElementById("error").textContent= "Incorrect Username or Password";
     }
 
     if (!user | !pass){
