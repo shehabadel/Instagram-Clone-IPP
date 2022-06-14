@@ -4,33 +4,37 @@
     <title>Search and Explore</title>
     <link href="../../css/index.css" type="text/css" rel="stylesheet" />
     <link href="search.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
     <script src="../database.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div id="exploreandsearch">
-        <input type="text" placeholder="Search">
+        <input id="searchBar" type="text" placeholder="Search" >
+        <input id="searchbtn" type="button" onclick=search() value="Search">
+        <p id="searchResults"><a href="../profile/Profile.html"></a></p>
 
         <div id="explorearea">
             <h1 id="exploretext">Explore</h1>
             <table>
                 <tr>
-                    <td><a><img src="../../assets/profiles/profile-1.jpg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-2.jpg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-3.jpeg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-4.png" /></a></td>
+                    <td><img id="img0" src="../../assets/profiles/profile-1.jpg" /></td>
+                    <td><img id="img1" src="../../assets/profiles/profile-2.jpg" /></td>
+                    <td><img id="img2" src="../../assets/profiles/profile-3.jpeg" /></td>
+                    <td><img id="img3" src="../../assets/profiles/profile-4.png" /></td>
                 </tr>
                 <tr>
-                    <td><a><img src="../../assets/profiles/profile-1.jpg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-2.jpg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-3.jpeg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-4.png" /></a></td>
+                    <td><img id="img4" src="../../assets/profiles/profile-1.jpg" /></td>
+                    <td><img id="img5" src="../../assets/profiles/profile-2.jpg" /></td>
+                    <td><img id="img6" src="../../assets/profiles/profile-3.jpeg" /></td>
+                    <td><img id="img7" src="../../assets/profiles/profile-4.png" /></td>
                 </tr>
                 <tr>
-                    <td><a><img src="../../assets/profiles/profile-1.jpg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-2.jpg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-3.jpeg" /></a></td>
-                    <td><a><img src="../../assets/profiles/profile-4.png" /></a></td>
+                    <td><img id="img8" src="../../assets/profiles/profile-1.jpg" /></td>
+                    <td><img id="img9" src="../../assets/profiles/profile-2.jpg" /></td>
+                    <td><img id="img10" src="../../assets/profiles/profile-3.jpeg" /></td>
+                    <td><img id="img11" src="../../assets/profiles/profile-4.png" /></td>
                 </tr>
             </table>
         </div>
