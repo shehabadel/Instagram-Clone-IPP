@@ -24,4 +24,10 @@ var ourData = [{
     "loggedIn": true
 }];
 
+
+var postsData=[{
+    "postContent":"",
+    "postImage": "",
+    "postCreator": ""
+}];
 var datacount=1;

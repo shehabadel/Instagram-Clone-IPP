@@ -1,6 +1,32 @@
 var randNum;
 var queryObj = document.querySelectorAll("td>img");
 console.log(queryObj);
+
+for (i = 0; i < ourData.length; i++) {
+    if(ourData[i].loggedIn==true){
+        profileUser = ourData[i];
+    }
+}
+
+console.log(profileUser.profilePic);
+if (profileUser) {
+    console.log(document.querySelector("#profile-avatar").src);
+    document.getElementById("profile-avatar").src = profileUser.profilePic;
+    document.getElementById("profile-name").textContent = profileUser.displayName;
+    document.getElementById("profile-username").textContent = profileUser.username;
+
+    document.getElementById("profilehyperlink").href = "../profile/Profile.html?"+profileUser.username;
+    document.getElementById("profileURL").href = "../profile/Profile.html?"+profileUser.username;
+    document.getElementById("postLink").href = "../makepost/makepost.html?"+profileUser.username;
+    document.getElementById("searchhyperlink").href = "../search and explore/search.html?"+profileUser.username;
+
+    
+    
+    console.log("finished");
+
+}
+
+
 var grid = [ourData[0],
 ourData[0],
 ourData[0],
@@ -148,7 +174,13 @@ function search() {
                 console.log("found");
                 console.log(ourData[i].displayName);
                 if (disp) {
-                    disp.textContent += ourData[i].displayName + "\n";
+                    var newitem=document.createElement("li");
+                    var newitemURL=document.createElement("a");
+                    disp.appendChild(newitem);
+                    newitem.appendChild(newitemURL);
+                    newitemURL.textContent=ourData[i].displayName;
+                    newitemURL.href="../profile/Profile.html?"+ourData[i].username;
+                    //disp.textContent += ourData[i].displayName + "\n";
                 }
             }
         }
@@ -159,3 +191,5 @@ function search() {
         disp.textContent = "No results were found!";
     }
 }
+
+

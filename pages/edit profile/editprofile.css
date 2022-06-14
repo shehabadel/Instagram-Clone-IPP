@@ -9,13 +9,14 @@ body {
     position: relative;
 }
 
-div {
+#editProfileDiv  {
     height: fit-content;
-    width: fit-content;
+    width:max-content;
     margin: auto;
     margin-top: 15px;
     background-color: var(--main-post);
     padding: 10px;
+    position: relative;
 }
 
 #submitdiv {

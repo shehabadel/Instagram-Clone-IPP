@@ -1,24 +1,21 @@
-@import "index.css"; 
-
-body{
-  display:flex;
+body {
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100;
-  background:var(--main-background);
-  transition: 0.5s; 
+  background: var(--main-background);
+  transition: 0.5s;
   position: relative;
-  }
+}
 
-  * {
-    border-radius: 2px;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: #FFFFFF;
+* {
+  border-radius: 2px;
+  color: #FFFFFF;
 }
 
 
 
-h1{
+h1 {
   font-size: 35px;
   color: #FFFFFF;
   text-align: center;
@@ -29,7 +26,7 @@ h1{
 
 
 
-.underlineme{
+.underlineme {
   text-decoration: underline;
   font-size: 20px;
   color: #FFFFFF;
@@ -39,365 +36,408 @@ h1{
   margin-top: 20px;
 }
 
-  
-  body.active{
+
+body.active {
   background: var(--main-background);
-  
-  }
-  
-  .container2 {
-      position: relative;
-      width: 1000px;
-      height: 800px;
-      margin: 20px;
-  }
-  
-  .Bg1{
+
+}
+
+.container2 {
+  position: relative;
+  width: 1000px;
+  height: 800px;
+  margin: 20px;
+}
+
+.Bg1 {
   position: absolute;
   top: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height:720px; 
+  height: 720px;
   background: var(--main-background);
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
-  }
-.imageBtn{
-color: #fff;
-cursor: pointer;
-background: var(--main-button);
-border: none;
-border-radius: 20px;
-padding: 10px 20px;
-width: 250px;
-
 }
 
-.captionBtn{
+.imageBtn {
   color: #fff;
-cursor: pointer;
-background: var(--main-button);
-border: none;
-border-radius: 20px;
-padding: 10px 20px;
-width: 250px;
+  cursor: pointer;
+  background: var(--main-button);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 250px;
 
 }
 
-.imageBtn:hover{
+.captionBtn {
+  color: #fff;
+  cursor: pointer;
+  background: var(--main-button);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 250px;
+
+}
+
+.imageBtn:hover {
   background-color: var(--main-button-hover);
 
 }
 
 
-.captionBtn:hover{
+.captionBtn:hover {
   background-color: var(--main-button-hover);
 
 }
 
-#postwocap{
- 
-    display: inline-block;
-   padding-top: 10px;
-   padding-bottom: 10px;
-    border-radius: 20px;
-    background-color: var(--main-button);
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    border: none;
-    margin-top: 80px;
+#postwocap {
+
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  background-color: var(--main-button);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  margin-top: 80px;
 
 
+}
+
+.Bg1 .box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Bg1 .box h2 {
+  color: #fff;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.Bg1 .box button {
+
+  padding: 10px 20px;
+  background: var(--main-button);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.Bg1 .box button:hover {
+  cursor: pointer;
+  background: var(--main-button-hover);
+}
+
+
+.formBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--main-post-inner);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.formBox.active {
+  left: 50%;
+
+}
+
+.formBox .form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  transition: 0.5s;
+}
+
+.formBox .imageForm {
+  transition-delay: 0.25s;
+}
+
+.formBox.active .imageForm {
+  left: -100%;
+  transition-delay: 0s;
+}
+
+.formBox .form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.formBox .form form input {
+  width: 100%;
+
+  outline: none;
+  font-size: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: var(--main-post-inner);
+}
+
+.formBox .form form input[type="submit"] {
+  background: var(--main-button);
+  border: none;
+  color: #fff;
+  width: 200px;
+  padding: 10px 10px;
+  background: var(--main-button);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin-left: 80px;
+  margin-top: 30px;
+  width: 250px;
+}
+
+.formBox .form form input[type="button"] {
+  background: var(--main-button);
+  border: none;
+  color: #fff;
+  width: 200px;
+  padding: 10px 10px;
+  background: var(--main-button);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin-left: 80px;
+  margin-top: 30px;
+  width: 250px;
+}
+
+.formBox .form form input[type="submit"]:hover {
+  cursor: pointer;
+  background: var(--main-button-hover);
+  cursor: pointer;
+}
+
+.formBox .form form input[type="button"]:hover {
+  cursor: pointer;
+  background: var(--main-button-hover);
+  cursor: pointer;
+}
+
+.formBox .captionForm {
+  left: 100%;
+  transition-delay: 0s;
+
+}
+
+.formBox.active .captionForm {
+  left: 100%;
+  transition-delay: 0.25s;
+}
+
+.formBox.active .captionForm input[type="submit"] {
+  background: var(--main-button);
+
+}
+
+.formBox.active .captionForm input[type="button"] {
+  background: var(--main-button);
+
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10%);
   }
 
-  .Bg1 .box {
-    position: relative;
-    width: 50%; 
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    }
-    
-    .Bg1 .box h2{
-    color: #fff ;
-    font-size: large;
-    margin-bottom: 10px;
-    }
-    
-    .Bg1 .box button{
-    
-    padding: 10px 20px;
-    background: var(--main-button);
-    color:#fff; 
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    }
-
-    .Bg1 .box button:hover{
-      cursor: pointer;
-      background: var(--main-button-hover);
-    }
-
-
-    .formBox{
-      position: absolute;
-      top: 0; 
-      left:0; 
-      width: 50%;
-      height: 100%;
-      background: var(--main-post-inner);
-      z-index: 1000; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 5px 45px rgba(0,0,0,0.25);
-      transition: 0.5s ease-in-out;
-      overflow: hidden;
-      }
-      
-      .formBox.active {
-           left: 50%;
-      
-      }
-      
-      .formBox .form{
-      position: absolute;
-      left: 0;
-      width:100%;
-      padding: 50px;
-      transition: 0.5s;
-      }
-      .formBox .imageForm{
-          transition-delay:0.25s ; 
-           }
-      
-      .formBox.active .imageForm{
-          left: -100%;
-          transition-delay:0s ;
-      }
-       
-      .formBox .form form {
-         width: 100%;
-         display: flex;
-         flex-direction:column ;
-      }
-    
-      
-      .formBox .form form input{
-         width: 100%;
-        
-         outline: none;
-         font-size: 20px;
-         border: 1px solid #fff;
-         color: #fff;
-         background-color: var(--main-post-inner);
-      }
-      
-      .formBox .form form input[type="submit"]
-      {
-          background: var(--main-button);
-          border: none;
-          color: #fff;
-          width: 200px;
-          padding: 10px 10px;
-          background: var(--main-button);
-          color:#fff; 
-          border-radius: 20px;
-          font-size: 20px;
-          font-weight: bold;
-          border: none;
-         margin-left: 80px;
-         margin-top: 30px;
-         width: 250px;
-      }
-
-      .formBox .form form input[type="submit"]:hover{
-        cursor: pointer;
-        background: var(--main-button-hover);
-        cursor: pointer;
-      }
-      
-      .formBox .captionForm{
-      left: 100%;
-      transition-delay: 0s;
-      
-      }
-      
-      .formBox.active .captionForm{
-          left:100%;
-          transition-delay: 0.25s;
-      }
-      
-      .formBox.active .captionForm input[type="submit"]
-      {
-          background: var(--main-button);
-      
-      }
-    
-      @keyframes updown {
-        0% {
-          transform: translateY(-10%);
-        }
-      
-        50% {
-          transform: translateY(10%);
-        }
-      
-        100% {
-          transform: translateY(-10%);
-        }
-      }
-       
-      #uploadphoto{
-        height: 200px;
-        width: 200px;
-        align-self: center;
-      
-      }
-      #arrow{
-        width: 80px;
-        height: 80px;
-        animation: updown 1s ease infinite;
-        
-     
-      }
-
-      #cursor{
-      width: 40px;
-      height: 40px;
-
-   
-    }
-
-    .blinking{
-      animation:blinkingCursor 1.5s ease infinite;
+  50% {
+    transform: translateY(10%);
   }
 
-  @keyframes blinkingCursor{
+  100% {
+    transform: translateY(-10%);
+  }
+}
 
-      0%{    opacity: 1;    }
-      25%{   opacity: 0;   }
-      50%{    opacity: 1;   }
-      75%{   opacity: 0;   }
-      100%{   opacity: 1;      }
+#uploadphoto {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+
+}
+
+#arrow {
+  width: 80px;
+  height: 80px;
+  animation: updown 1s ease infinite;
+
+
+}
+
+#cursor {
+  width: 40px;
+  height: 40px;
+
+
+}
+
+.blinking {
+  animation: blinkingCursor 1.5s ease infinite;
+}
+
+@keyframes blinkingCursor {
+
+  0% {
+    opacity: 1;
   }
 
-      .uploadimgdiv{
-        align-self: center;
-
-      }
-
-      .arrowimg{
-        margin-top: -150px;
-        margin-left: 250px
-      }
-
-      textarea{
-        align-items: center;
-        padding-left:  20px;
-        padding-right:  20px;
-        padding-top:  10px;
-        padding-bottom:  10px;
-        align-items: center;
-        background-color: var(--main-post-inner);
-        border: 2px solid #fff;
-        cursor:text;
-        
+  25% {
+    opacity: 0;
   }
 
-  .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  input[type="file"] {
-    position: absolute;
-    z-index: -1;
-    top: 10px;
-    left: 8px;
-    font-size: 20px;
-    color: var(--main-background)
-  }
-  
-  .button-wrap {
-    position: relative;
-  }
-  
-  .upload-button {
-    display: inline-block;
-    padding-top: 10px;
-     border-radius: 20px;
-     background-color: var(--main-button);
-     font-size: 20px;
-     font-weight: bold;
-     color: #fff;
-     width: 250px;
-     height: 50px;
-     text-align: center;
-     border: none;
-     margin-top: 480px;
-     margin-left: 30px;
-
-
+  50% {
+    opacity: 1;
   }
 
-  .upload-button:hover{
-
-    cursor: pointer;
-    background: var(--main-button-hover);
+  75% {
+    opacity: 0;
   }
 
+  100% {
+    opacity: 1;
+  }
+}
+
+.uploadimgdiv {
+  align-self: center;
+
+}
+
+.arrowimg {
+  margin-top: -150px;
+  margin-left: 250px
+}
+
+textarea {
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  background-color: var(--main-post-inner);
+  border: 2px solid #fff;
+  cursor: text;
+
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 8px;
+  font-size: 20px;
+  color: var(--main-background)
+}
+
+.button-wrap {
+  position: relative;
+}
+
+.upload-button {
+  display: inline-block;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: var(--main-button);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  margin-top: 480px;
+  margin-left: 30px;
+
+
+}
+
+.upload-button:hover {
+
+  cursor: pointer;
+  background: var(--main-button-hover);
+}
 
 
 
 
-  .form .grid {
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    gap:20px;
-  }
-  .form .grid .form-element {
-    width:600px;
-    height:600px;
-  
-  }
-  .form .grid .form-element input {
-    display:none;
-  }
-  .form .grid .form-element img {
-    width:300px;
-    height:300px;
-    object-fit:cover;
-    margin-left: 60px;
-    margin-top: 80px;
 
-   
-  }
-  .form .grid .form-element div {
-    position:relative;
-    height:0px;
-    background:var(--main-post-inner);
-    text-align:center;
-    color:transparent; 
-  
-  }
-  .form .grid .form-element div span {
+.form .grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form .grid .form-element {
+  width: 600px;
+  height: 600px;
+
+}
+
+.form .grid .form-element input {
   display: none;
-  }
+}
 
- 
+.form .grid .form-element img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 60px;
+  margin-top: 80px;
 
- 
-  
+
+}
+
+.form .grid .form-element div {
+  position: relative;
+  height: 0px;
+  background: var(--main-post-inner);
+  text-align: center;
+  color: transparent;
+
+}
+
+.form .grid .form-element div span {
+  display: none;
+}
