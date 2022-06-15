@@ -104,8 +104,7 @@ if (isset($_POST['reg_btn'])) {
             />
             <label>Password</label>
             <input type="password" placeholder="Password" name="password" required />
-            <input type="submit" class="btn main-button main-text" value="Sign Up" name="reg_btn" />
-            <input type="button" class="btn main-button main-text" value="Sign Up as Administrator" />
+            <input type="submit" class="btn main-button main-text mt-2" value="Sign Up" name="reg_btn" />
         </form>
         <p class="para-2">
             Already have an account? <a href="../Login/Login.html">Login here</a>
