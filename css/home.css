@@ -244,11 +244,11 @@ body{
 .comments-btn i{
 	position: absolute;
 	top:2px;
-	transition: all .32s ease;
-	-webkit-transition: all .32s ease;
-	-moz-transition: all .32s ease;
-	-ms-transition: all .32s ease;
-	-o-transition: all .32s ease;
+	transition: all .32s ease !important;
+	-webkit-transition: all .32s ease !important;
+	-moz-transition: all .32s ease !important;
+	-ms-transition: all .32s ease !important;
+	-o-transition: all .32s ease !important;
 }
 .transition{
 	transition: all .32s ease !important;

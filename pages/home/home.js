@@ -1,4 +1,6 @@
-
+$('document').ready(function () {
+	updateCommentsNumber()
+})
 $('.click').click(function() {
 	var click = $(this)
 	var parent=$(this).parent()
@@ -74,6 +76,24 @@ $('.post-flag').on('click',function(){
 	}
 })
 
+
+$('.comments-btn').on('click', function (e) {
+	var postInteractions = $(this).parents('.post-interactions')
+	var commentWrapper = postInteractions.siblings('.comments-wrapper')
+	var hr = commentWrapper.next('hr')
+	if(commentWrapper.hasClass('d-none')){
+		commentWrapper.removeClass('d-none')
+		commentWrapper.addClass('d-block')
+		commentWrapper.after('<hr>')
+	}else{
+		commentWrapper.addClass('d-none')
+		commentWrapper.removeClass('d-block')	
+		hr.remove()
+	}
+})
+/**
+ * Add comment from comment input on pressing enter
+ */
 $('.comment-input-text').on('keypress',function (e) {
 	if(e.which == 13) {
 		var commentText = $(this).val()
@@ -102,5 +122,14 @@ $('.comment-input-text').on('keypress',function (e) {
 	</div>`
 	commentWrapper.append(commentPost)
 	$(this).val('')
+	updateCommentsNumber()
     }
 })
+function updateCommentsNumber(){
+	$('.comments-number').each(function () {
+		var postInteractions = $(this).parents('.post-interactions')
+		var commentsWrapper = postInteractions.siblings('.comments-wrapper')
+		var numberOfComments = commentsWrapper.children().length
+		$(this).children('p').text(numberOfComments)
+	})
+}
