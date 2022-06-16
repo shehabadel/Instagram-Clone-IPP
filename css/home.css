@@ -90,7 +90,6 @@ body{
     padding: 30px;
 }
 .post-img{
-    max-height: 200px;
     border: 2px solid black;
     border-radius: 10px;
     -webkit-border-radius: 10px;

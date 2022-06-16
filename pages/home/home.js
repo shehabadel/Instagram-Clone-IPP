@@ -74,3 +74,33 @@ $('.post-flag').on('click',function(){
 	}
 })
 
+$('.comment-input-text').on('keypress',function (e) {
+	if(e.which == 13) {
+		var commentText = $(this).val()
+		var date = new Date()
+		e.preventDefault()
+		var commentInput = $(this).parents('.comment-input')
+		var commentWrapper = commentInput.siblings('.comments-wrapper')
+		let commentPost = `<div id="${'commentid'+date.getTime()}" class="comment mb-1">
+		<div class="comment-meta">
+			<!--fetch comment's user avatar here-->
+			<a href="#" id="commentid-avatar-link">
+				<!--Fetch user's avatar here-->
+				<img id="commentid-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
+			</a>
+			<!--fetch comment user's name here-->
+			<a href="#" id="commentid-user-name-link" class="ms-2">
+				<p id="commentid-user-name">Shehab Adel</p>
+			</a>
+		</div>
+		<div class="comment-text my-2">
+			<!--fetch comment text here-->
+			<p>${commentText}</p>
+		</div>
+		<!--fetch comment date here-->
+		<span>${date.toDateString()}</span>
+	</div>`
+	commentWrapper.append(commentPost)
+	$(this).val('')
+    }
+})
