@@ -1,5 +1,4 @@
 $('document').ready(function () {
-	updateCommentsNumber()
 	SimGETposts()
 	updateCommentsNumber()
 	SimGETfriends()
@@ -126,6 +125,10 @@ $('document').ready(function () {
 		}
 	})
 })
+
+/**
+ * Simulates loaded data from the database.
+ */
 var date = new Date();
 var jsonPosts = [
 	{
@@ -180,6 +183,10 @@ var jsonFriends = [{
 	friendName:"Zyad Yakan",
 	friendAvatar:'../../assets/avatar-blank.png'
 }]
+
+/**
+ * Simulates making a GET Request on all posts from the database and loading it inside posts-wrapper
+ */
 function SimGETposts() {
 	var postsWrapper = $('.posts-wrapper')
 	for (let i = 0; i < jsonPosts.length; i++) {
@@ -292,6 +299,10 @@ function SimGETposts() {
 		postsWrapper.append(post)
 	}
 }
+
+/**
+ * Simulates making a GET request on all friends list from the database and loading it inside friends-list
+ */
 function SimGETfriends() {
 	var friendsList = $('.friends-list')
 	for(let i=0; i<jsonFriends.length; i++){
@@ -312,6 +323,10 @@ function SimGETfriends() {
 		friendsList.append(friend)
 	}
 }
+
+/**
+ * Dynamically update number of comments
+ */
 function updateCommentsNumber() {
 	$('.comments-number').each(function () {
 		var postInteractions = $(this).parents('.post-interactions')

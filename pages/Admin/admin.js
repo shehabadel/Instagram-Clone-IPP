@@ -6,6 +6,33 @@ const reportedPosts=[{
 }]
 $('document').ready(function () {
     simGETReported()
+    deleteBtnFn()
+})
+
+/**
+ * Simulates making a GET request on all reported Posts from a database to be fetched
+ * in a table.
+ */
+
+function simGETReported() {
+    var reported = $('.reported-posts-wrapper')
+    for (let i = 0; i < reportedPosts.length; i++) {
+        var reportedPost= `
+        <tr>
+        <th scope="row">${reportedPosts[i].postID}</th>
+        <td>${reportedPosts[i].postUser}</td>
+        <td>${reportedPosts[i].userID}</td>
+        <td>${reportedPosts[i].postText}</td>
+        <th scope="col"><button type="button" class="btn btn-danger del-btn">delete post</button></th>
+        </tr>`
+        reported.append(reportedPost);
+    }
+}
+
+/**
+ * Simulates making a DELETE request on specific post from the database and table.
+ */
+function deleteBtnFn(){
     var delBtns = document.querySelectorAll('.del-btn')
     
     delBtns.forEach((btn)=>{
@@ -16,23 +43,4 @@ $('document').ready(function () {
             deletedRow.innerHTML=''
         }
     })
-        
-
-})
-
-function simGETReported() {
-
-    var reported = $('.reported-posts-wrapper')
-    for (let i = 0; i < reportedPosts.length; i++) {
-        var reportedPost= `
-        <tr>
-        <th scope="row">${reportedPosts[i].postID}</th>
-        <td>${reportedPosts[i].postUser}</td>
-        <td>${reportedPosts[i].userID}</td>
-        <td>${reportedPosts[i].postText}</td>
-        <th scope="col"><button type="button" class="btn btn-danger del-btn">delete post</button></th>
-        </tr>
-    `
-        reported.append(reportedPost);
-    }
 }
