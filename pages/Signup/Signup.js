@@ -53,7 +53,7 @@ function signup (name , username , email , numb , pass , passconf , admin){
 
     if (j== -1 && k ==-1 && l== -1 && m== -1 ){
         document.getElementById("error").style.opacity= 0;
-        if(!name && !username && !email && !numb && !pass && !passconf){
+        if(name=='' || username=='' || email=='' || numb =='' || pass=='' || passconf==''){
             document.getElementById("error").style.opacity= 100;
             document.getElementById("error").textContent= "Invalid Information";     
            }else{

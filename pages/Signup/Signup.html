@@ -19,15 +19,15 @@
                 <label id="fn">Name</label>
                 <input type="text" required="required" id="name" placeholder="Name" />
                 <label id="usernameLabel">Username <sup class="astr" id="astricsName">* Username is already taken</sup></label>
-                <input type="text" id="username" placeholder="Username" />
+                <input type="text" required="required" id="username" placeholder="Username" />
                 <label>Email <sup class="astr" id="astricsEmail">* Email is already taken</sup></label>
-                <input type="email" id="email" placeholder="Email" />
+                <input type="email" required="required" id="email" placeholder="Email" />
                 <label>Phone Number</label>
-                <input type="tel" id="numb" placeholder="Phone Number" />
+                <input type="tel" required="required" id="numb" placeholder="Phone Number" />
                 <label>Password <sup class="astr" id="passError">* Password does not match</sup></label>
-                <input type="password" id="pass" placeholder="Password" />
+                <input type="password" required="required" id="pass" placeholder="Password" />
                 <label>Confirm Password <sup class="astr" id="confError">* Password does not match</sup></label>
-                <input type="password" id="passconf" placeholder="Confirm Password" />
+                <input type="password" required="required" id="passconf" placeholder="Confirm Password" />
 
                 <input type="button" value="Sign Up" onclick="signup(document.getElementById('name').value , document.getElementById('username').value , document.getElementById('email').value , document.getElementById('numb').value, document.getElementById('pass').value , document.getElementById('passconf').value, false)"/>
                 <input type="button" value="Sign Up as Administrator" onclick="signup(document.getElementById('name').value , document.getElementById('username').value , document.getElementById('email').value , document.getElementById('numb').value, document.getElementById('pass').value , document.getElementById('passconf').value, true)" />
