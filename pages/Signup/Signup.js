@@ -59,11 +59,20 @@ function signup (name , username , email , numb , pass , passconf , admin){
            }else{
             if (admin == false){
             ourData.push( {username:username, displayName:name ,profilePic:"../../assets/avatar-blank.png", email:email ,password:pass , phoneNum:numb, loggedIn:true , Admin:false});
+            console.log("signup button clicked");
+            for (var i = 0; i < ourData.length; i++) 
+                    console.log(ourData[i]);
+            
+           
             window.location.replace("../search and explore/search.html");
              /// CHANGE PAGE TRANSITION TO HOME PAGE
              alert("Your data is added successfully!");
             }else{
             ourData.push( {username:username, displayName:name ,profilePic:"../../assets/avatar-blank.png", email:email ,password:pass , phoneNum:numb, loggedIn:true , Admin:true});
+            console.log("signup button clicked");
+            for (var i = 0; i < ourData.length; i++) 
+                    console.log(ourData[i]);
+                    
             window.location.replace("../search and explore/search.html");
             /// CHANGE PAGE TRANSITION TO ADMIN HOME PAGE
             alert("Your data is added successfully!");
@@ -71,14 +80,6 @@ function signup (name , username , email , numb , pass , passconf , admin){
         }
     }
 
-    console.log("signup button clicked");
-    for (var i = 0; i < ourData.length; i++) 
-            console.log(ourData[i]);
 
-    
-
-
-    }
-   
 
 
