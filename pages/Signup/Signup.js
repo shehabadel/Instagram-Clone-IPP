@@ -80,6 +80,6 @@ function signup (name , username , email , numb , pass , passconf , admin){
         }
     }
 
-
+}
 
 
