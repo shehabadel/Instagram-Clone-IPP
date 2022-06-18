@@ -2,6 +2,7 @@ $('document').ready(function () {
 	updateCommentsNumber()
 	SimGETposts()
 	updateCommentsNumber()
+	SimGETfriends()
 	$('.click').click(function () {
 		var click = $(this)
 		var parent = $(this).parent()
@@ -173,7 +174,12 @@ var jsonPosts = [
 		}
 		]
 	}]
-
+var jsonFriends = [{
+	friendID:"12371723",
+	friendURL:"",
+	friendName:"Zyad Yakan",
+	friendAvatar:'../../assets/avatar-blank.png'
+}]
 function SimGETposts() {
 	var postsWrapper = $('.posts-wrapper')
 	for (let i = 0; i < jsonPosts.length; i++) {
@@ -286,6 +292,26 @@ function SimGETposts() {
 		postsWrapper.append(post)
 	}
 }
+function SimGETfriends() {
+	var friendsList = $('.friends-list')
+	for(let i=0; i<jsonFriends.length; i++){
+		var friend = `
+		<a href="${jsonFriends[i].friendURL}" id="${jsonFriends[i].friendID}">
+                                    <div id="friend" class="friend">
+                                        <!--fetch list of friend's avatar here-->
+                                        <div class="friend-avatar">
+                                            <img alt="${jsonFriends[i].friendName}'s Avatar" src="${jsonFriends[i].friendAvatar}" class="card-img-top avatar avatar-sm profile-avatar">
+                                        </div>
+                                        <!--fetch list of friend's name here-->
+                                        <div class="friend-name-wrapper">
+                                            <p class="friend-name"> ${jsonFriends[i].friendName}</p>
+                                        </div>
+                                    </div>
+                                </a>
+		`
+		friendsList.append(friend)
+	}
+}
 function updateCommentsNumber() {
 	$('.comments-number').each(function () {
 		var postInteractions = $(this).parents('.post-interactions')
@@ -294,125 +320,3 @@ function updateCommentsNumber() {
 		$(this).children('p').text(numberOfComments)
 	})
 }
-$('.click').click(function () {
-	var click = $(this)
-	var parent = $(this).parent()
-	var favNumbElement = parent.find('.favorites-number p');
-
-	var fav_num = parseInt(favNumbElement.text())
-	var icon = $(this).find('.fa-heart')
-	var info = $(this).find('.info')
-	console.log(icon)
-
-	if (icon.hasClass("fa-solid")) {
-		fav_num -= 1
-		favNumbElement.text(fav_num)
-		click.removeClass('active')
-		setTimeout(function () {
-			click.removeClass('active-2')
-		}, 30)
-		click.removeClass('active-3')
-		setTimeout(function () {
-			icon.removeClass('fa-solid')
-			icon.addClass('fa-regular')
-		}, 15)
-	} else {
-		fav_num += 1
-		favNumbElement.text(fav_num)
-		click.addClass('active')
-		click.addClass('active-2')
-		setTimeout(function () {
-			icon.addClass('fa-solid')
-			icon.removeClass('fa-regular')
-		}, 150)
-		setTimeout(function () {
-			click.addClass('active-3')
-		}, 150)
-		info.addClass('info-tog')
-		setTimeout(function () {
-			info.removeClass('info-tog')
-		}, 1000)
-	}
-})
-
-$('.comments-btn').on('mouseenter', function (e) {
-	var commentIcon = $(this).find('i')
-	if (commentIcon.hasClass("fa-regular fa-comment")) {
-		commentIcon.removeClass('fa-regular fa-comment')
-		commentIcon.addClass('fa-solid fa-comment')
-	} else {
-		commentIcon.removeClass('fa-solid fa-comment')
-		commentIcon.addClass('fa-regular fa-comment')
-	}
-})
-$('.comments-btn').on('mouseleave', function (e) {
-	var commentIcon = $(this).find('i')
-	if (commentIcon.hasClass("fa-solid fa-comment")) {
-		commentIcon.removeClass('fa-solid fa-comment')
-		commentIcon.addClass('fa-regular fa-comment')
-	} else {
-		commentIcon.removeClass('fa-regular fa-comment')
-		commentIcon.addClass('fa-solid fa-comment')
-	}
-})
-
-$('.post-flag').on('click', function () {
-	var flagIcon = $(this).find('i')
-	if (flagIcon.hasClass("fa-solid fa-flag")) {
-		flagIcon.removeClass('fa-solid fa-flag')
-		flagIcon.addClass('fa-regular fa-flag')
-	} else {
-		flagIcon.removeClass('fa-regular fa-flag')
-		flagIcon.addClass('fa-solid fa-flag')
-	}
-})
-
-
-$('.comments-btn').on('click', function (e) {
-	var postInteractions = $(this).parents('.post-interactions')
-	var commentWrapper = postInteractions.siblings('.comments-wrapper')
-	var hr = commentWrapper.next('hr')
-	if (commentWrapper.hasClass('d-none')) {
-		commentWrapper.removeClass('d-none')
-		commentWrapper.addClass('d-block')
-		commentWrapper.after('<hr>')
-	} else {
-		commentWrapper.addClass('d-none')
-		commentWrapper.removeClass('d-block')
-		hr.remove()
-	}
-})
-/**
- * Add comment from comment input on pressing enter
- */
-$('.comment-input-text').on('keypress', function (e) {
-	if (e.which == 13) {
-		e.preventDefault()
-		var commentText = $(this).val()
-		var date = new Date()
-		var commentInput = $(this).parents('.comment-input')
-		var commentWrapper = commentInput.siblings('.comments-wrapper')
-		let commentPost = `<div id="${'commentid' + date.getTime()}" class="comment mb-1">
-				<div class="comment-meta">
-					<!--fetch comment's user avatar here-->
-					<a href="#" id="commentid-avatar-link">
-						<!--Fetch user's avatar here-->
-						<img id="commentid-avatar" src="../../assets/avatar-blank.png" class="card-img-top avatar avatar-sm profile-avatar" alt="...">
-					</a>
-					<!--fetch comment user's name here-->
-					<a href="#" id="commentid-user-name-link" class="ms-2">
-						<p id="commentid-user-name">Shehab Adel</p>
-					</a>
-				</div>
-				<div class="comment-text my-2">
-					<!--fetch comment text here-->
-					<p>${commentText}</p>
-				</div>
-				<!--fetch comment date here-->
-				<span>${date.toDateString()}</span>
-			</div>`
-		commentWrapper.append(commentPost)
-		$(this).val('')
-		updateCommentsNumber()
-	}
-})
