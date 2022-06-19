@@ -18,10 +18,9 @@ if (profileUser) {
     document.getElementById("profilehyperlink").href = "../profile/Profile.html?"+profileUser.username;
     document.getElementById("profileURL").href = "../profile/Profile.html?"+profileUser.username;
     document.getElementById("postLink").href = "../makepost/makepost.html?"+profileUser.username;
-    document.getElementById("searchhyperlink").href = "../search and explore/search.html?"+profileUser.username;
-
-    
-    
+    document.getElementById("searchhyperlink").href = "../search/search.html?"+profileUser.username;
+    //Redirect to homepage with profile's username
+    document.getElementById("homelink").href="../home/home.html?"+profileUser.username;
     console.log("finished");
 
 }

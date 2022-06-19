@@ -16,6 +16,8 @@ if(profileUser){
     document.getElementById("profilehyperlink2").href = "../profile/Profile.html?"+profileUser.username;
     document.getElementById("profilehyperlink3").href = "../profile/Profile.html?"+profileUser.username;
     document.getElementById("posthyperlink").href = "makepost.html?"+profileUser.username;
+    document.getElementById("searchhyperlink").href = "../search/search.html?" + profileUser.username;
+    document.getElementById("homelink").href="../home/home.html?"+profileUser.username;
 }
 
 

@@ -10,7 +10,8 @@ function signin(user,pass){
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Username or Password";
     }else if (ourData[j].password==pass && ourData[j].Admin==false){
-        window.location.replace("../home/home.html");
+        //In order to retreive user's data in the home or admin's pages
+        window.location.replace("../home/home.html?"+ourData[j].username);
          /// CHANGE PAGE TRANSITION TO HOME PAGE
         ourData[j].loggedIn= true;
     }else{
@@ -37,7 +38,8 @@ function signAdminin(user,pass){
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Admin Username or Password";
     }else if (ourData[j].password==pass && ourData[j].Admin==true){
-        window.location.replace("../Admin/admin.html");
+        //In order to retreive user's data in the home or admin's pages
+        window.location.replace("../Admin/admin.html?"+ourData[j].username);
          /// CHANGE PAGE TRANSITION TO ADMIN HOME PAGE
         ourData[j].loggedIn= true;
     }else{

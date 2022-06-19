@@ -21,7 +21,7 @@ if (profileUser) {
     document.getElementById("profile-name").textContent = profileUser.displayName;
     document.getElementById("profile-username").textContent = profileUser.username;
 
-    
+    document.getElementById("homelink").href="../home/home.html?"+profileUser.username;
     document.getElementById("profile_pic").src = visitedUser.profilePic;
     document.getElementById("name").textContent = visitedUser.displayName;
     document.getElementById("username").textContent = visitedUser.username;
@@ -29,7 +29,7 @@ if (profileUser) {
     document.getElementById("profilehyperlink").href = "Profile.html?"+profileUser.username;
     document.getElementById("profileURL").href = "Profile.html?"+profileUser.username;
     document.getElementById("postLink").href = "../makepost/makepost.html?"+profileUser.username;
-    document.getElementById("searchhyperlink").href = "../search and explore/search.html?"+profileUser.username;
+    document.getElementById("searchhyperlink").href = "../search/search.html?"+profileUser.username;
 
     
     

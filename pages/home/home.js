@@ -1,4 +1,5 @@
 $('document').ready(function () {
+	getUserData()
 	SimGETposts()
 	updateCommentsNumber()
 	SimGETfriends()
@@ -335,3 +336,61 @@ function updateCommentsNumber() {
 		$(this).children('p').text(numberOfComments)
 	})
 }
+
+/**
+ * Simulates loading profile username, name and profile picture from session or cookie
+ */
+function getUserData() {
+	var profilePic = $('#profile-avatar')
+	var profileUsername = $('#profile-username')
+	var profileHyperLink = $('.profile-hyperlink')
+	var profileName = $('#profile-name');
+
+
+	/**
+	 * Fetch username from the query string from the URL, and based on it
+	 * if it doesnot exist, then re-direct to login page, if it exists,
+	 * then fetch the user's data and replace it in the nav bar like Name, username, and profile picture
+	 */
+	var queryString = location.search.substring(1);
+	console.log(queryString);
+	if(!queryString){
+		window.location.replace("../Login/Login.html");
+	}
+	var profileUser;
+for (i = 0; i < ourData.length; i++) {
+    if (ourData[i].username == queryString) {
+        visitedUser = ourData[i];
+    }
+    if(ourData[i].loggedIn==true){
+        profileUser = ourData[i];
+    }
+}
+
+//Appending url with query string representing the profile's username for all hyperlinks
+if (profileUser) {
+	//profile hyperlinks
+    $('#profilehyperlink').attr('href',"../profile/Profile.html?"+profileUser.username)
+	$('.profile-hyperlink').attr('href',"../profile/Profile.html?"+profileUser.username)
+    $("#profileURL").attr('href',"../profile/Profile.html?"+profileUser.username)
+	//make post hyperlink
+    $("#postLink").attr('href',"../makepost/makepost.html?"+profileUser.username)
+	//Search hyperlink
+    $("#searchhyperlink").attr('href',"../search/search.html?"+profileUser.username)
+	//Home page hyperlink
+	$("#homelink").attr('href',"../home/home.html?"+profileUser.username)
+    console.log("finished");
+
+}
+
+/**
+ * Updating the Navigation bar html with the user's data fetched from database.js
+ */
+profilePic.attr('src',profileUser.profilePic)
+profileUsername.text(profileUser.username)
+profileName.text(profileUser.displayName)
+profileHyperLink.attr('href',"../profile/Profile.html?"+profileUser.username)
+
+}
+
+
