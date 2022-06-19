@@ -7,7 +7,19 @@ const reportedPosts=[{
 $('document').ready(function () {
     simGETReported()
     deleteBtnFn()
+    logout()
 })
+
+/**
+ * Simulates destroying a session and emptying a cookie and redirects to login page
+ */
+
+function logout() {
+    var logout = $('#logout')
+    logout.click(function () {
+        window.location.replace("../Login/Login.html");
+    })
+}
 
 /**
  * Simulates making a GET request on all reported Posts from a database to be fetched
