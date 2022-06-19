@@ -361,9 +361,11 @@ function getUserData() {
 for (i = 0; i < ourData.length; i++) {
     if (ourData[i].username == queryString) {
         visitedUser = ourData[i];
+		console.log(profileUser)
     }
     if(ourData[i].loggedIn==true){
         profileUser = ourData[i];
+		console.log(profileUser)
     }
 }
 

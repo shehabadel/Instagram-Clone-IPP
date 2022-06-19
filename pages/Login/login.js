@@ -1,8 +1,10 @@
 function signin(user,pass){
     var j=-1;
     for(var i =0 ; i< ourData.length; i++){
-        if (ourData[i].username==user){
+        if (ourData[i].username===user){
+            console.log(ourData[i])
             j=i;
+            break;
         }
     }
    
@@ -11,9 +13,9 @@ function signin(user,pass){
         document.getElementById("error").textContent= "Incorrect Username or Password";
     }else if (ourData[j].password==pass && ourData[j].Admin==false){
         //In order to retreive user's data in the home or admin's pages
+        ourData[j].loggedIn= true;
         window.location.replace("../home/home.html?"+ourData[j].username);
          /// CHANGE PAGE TRANSITION TO HOME PAGE
-        ourData[j].loggedIn= true;
     }else{
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Username or Password";

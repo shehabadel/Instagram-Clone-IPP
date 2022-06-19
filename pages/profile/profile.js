@@ -32,7 +32,12 @@ if (profileUser) {
     document.getElementById("searchhyperlink").href = "../search/search.html?"+profileUser.username;
 
     
-    
+    document.querySelector('.friendlist').addEventListener('click',function () {
+        window.location.replace('../friends/friends.html?'+profileUser.username);
+    })
+    document.querySelector('.editprofile').addEventListener('click',function () {
+        window.location.replace('../edit profile/editprofile.html?'+profileUser.username);
+    })
     console.log("finished");
 
 }
