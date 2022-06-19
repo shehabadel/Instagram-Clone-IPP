@@ -183,7 +183,159 @@ var jsonFriends = [{
 	friendURL:"",
 	friendName:"Zyad Yakan",
 	friendAvatar:'../../assets/avatar-blank.png'
-}]
+},
+{
+    "friendID": "ingy",
+    "friendName": "Ingy Mysara",
+    "friendAvatar": "../../assets/profiles/profile-6.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "ola",
+    "friendName": "Ola Alnajjar",
+    "friendAvatar": "../../assets/profiles/profile-9.jpeg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :true
+,
+"friendURL":''},{
+    "friendID": "reem",
+    "friendName": "Reem Aboushama",
+    "friendAvatar": "../../assets/profiles/profile-4.png",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": true,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "Farida",
+    "friendName": "Farida Mahamed",
+    "friendAvatar": "../../assets/profiles/profile-3.jpeg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "Nour",
+    "friendName": "Nour Mohamed",
+    "friendAvatar": "../../assets/profiles/profile-2.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "farah",
+    "friendName": "Farah Kamaly",
+    "friendAvatar": "../../assets/profiles/profile-10.png",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "mariam",
+    "friendName": "Mariam Tamer",
+    "friendAvatar": "../../assets/profiles/profile-5.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "hossam",
+    "friendName": "Hossam Mansour",
+    "friendAvatar": "../../assets/profiles/profile-7.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "salma",
+    "friendName": "Salma Osama",
+    "friendAvatar": "../../assets/profiles/profile-6.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "hana",
+    "friendName": "Hana Ahmed",
+    "friendAvatar": "../../assets/profiles/profile-9.jpeg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "jana",
+    "friendName": "Jana Khaled",
+    "friendAvatar": "../../assets/profiles/profile-2.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "mahmoud",
+    "friendName": "Mahmoud Mohamed",
+    "friendAvatar": "../../assets/profiles/profile-5.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "mohab",
+    "friendName": "Mohab Galal",
+    "friendAvatar": "../../assets/profiles/profile-4.png",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "omar",
+    "friendName": "Omar Ahmed",
+    "friendAvatar": "../../assets/profiles/profile-3.jpeg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+},{
+    "friendID": "shehab",
+    "friendName": "Shehab Adel",
+    "friendAvatar": "../../assets/profiles/profile-7.jpg",
+    "email": "123@456.com",
+    "password": "12345678",
+    "phoneNum": "0123456789",
+    "loggedIn": false,
+    "Admin" :false,
+	"friendURL":''
+}
+]
 
 /**
  * Simulates making a GET Request on all posts from the database and loading it inside posts-wrapper
