@@ -1,7 +1,7 @@
 * {
 
     border-radius: 2px;
-    font-family: 'Trebuchet MS', sans-serif;
+    /*font-family: 'Trebuchet MS', sans-serif;*/
     color: #FFFFFF;
 
 }
@@ -11,11 +11,14 @@ body {
     position: relative;
 }
 
+
 #exploreandsearch {
     width: fit-content;
     height: fit-content;
     margin: auto;
     padding: 10px;
+    margin-top:0px;
+    
 }
 
 #explorearea {
@@ -25,7 +28,7 @@ body {
     padding: 10px;
 }
 
-input {
+#searchBar {
     width: 100%;
     background-color: var(--main-post-inner);
     color: #FFFFFF;
@@ -55,4 +58,23 @@ table {
     margin: auto;
     width: fit-content;
     border-spacing: 3px;
+}
+
+
+p {
+    white-space: pre-wrap;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#searchbtn {
+    background-color: var(--main-button);
+    width: fit-content;
+    color: #FFFFFF;
+    border-color: #000000;
+    border: 7px;
+    padding: 10px;
+    margin-top: 30px;
 }

@@ -74,17 +74,16 @@ body {
     text-align: center;
     font-size: 15px;
     color: var(--main-text-color);
-    margin-top: 30px;
+    margin-top: 10px;
   }
-
+  .errormsg{
+    color:red;
+    opacity: 0;
+  }
 
 a{
     color: var(--main-button);
     text-decoration: underline;
-}
-
-a:visited{
-    color: blueviolet;
 }
 
 

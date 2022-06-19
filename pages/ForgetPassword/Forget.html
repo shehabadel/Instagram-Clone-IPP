@@ -5,6 +5,7 @@
         </title>
         <link rel="stylesheet" href="../../css/index.css">
         <link rel="stylesheet" href="Forget.css">
+        <script src="../database.js" type="text/javascript"></script>
 
     </head>
 <body>
@@ -13,12 +14,12 @@
         <p style="text-align: left; margin-left: 20px;"> Please Enter Your Email and Phone Number</p>
         <form>
           <label>Email</label>
-          <input type="email" placeholder="Email" />
+          <input id="email" type="email" placeholder="Email" />
           <label>Phone Number</label>
-          <input type="tel" placeholder="Phone Number" />
-          <a href="../ChangePassword/ChangePassword.html">
-            <input type="button" class="btn" value="Continue"  >
-          </a>
+          <input id="numb" type="tel" placeholder="Phone Number" />
+
+          <input type="button" class="btn" value="Continue" onclick="forget(document.getElementById('email').value , document.getElementById('numb').value)"/>
+          <p class="errormsg" id="error" style="text-align: center;">Incorrect Email or Phone Number </p>
           <p class="Login" style="text-align: center;">Already have an account?  <a href="../Login/Login.html"> Login now</a></p>
           <p class="signup" style="text-align: center;">Don't have an account yet?  <a href="../Signup/Signup.html"> Signup now</a></p>
         </form>
@@ -28,6 +29,7 @@
     <br>
     
   </div>
+  <script src="Forget.js" type="text/javascript"></script>
 </body>
 
 
