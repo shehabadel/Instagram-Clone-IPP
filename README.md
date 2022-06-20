@@ -1,3 +1,11 @@
+# Instagram Clone Project
+## To start our project
+#### - Navigate to `pages/Login/Login.html`
+#### - To login and use an **administrator's profile** use the following credentials:
+`username = "ola", password = "12345678"`
+#### - To login and use a **user's profile** use the following credentials:
+`username = "reem", password = "12345678"`
+
 # Share-Go
 ## Brief
 
