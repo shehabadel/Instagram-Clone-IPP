@@ -5,6 +5,7 @@ class Database {
     private $username = 'root';
     private $password = '123456';
     private $port='3306';
+    //Bad, very bad practice but until we can see what we can do
     private $conn;
 
     //DB Connect PDO
@@ -27,10 +28,10 @@ class Database {
             if ($this->conn->connect_error) {
                 throw new Exception("Connection Exception", 1);
             }
-            echo 'Connected';
         } catch (Exception $e) {
             die('Connection failed' . $this->conn->connect_error);
         }
+        return $this->conn;
     }
 }
 ?>

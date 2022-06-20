@@ -19,7 +19,7 @@
                 <div class="card bg-transparent main-text border-0 profile-card">
                     <div class="card-header border-0 profile-avatar-wrapper">
                         <!--Redirects to user's profile-->
-                        <a href="#" class="profile-hyperlink">
+                        <a href="../profile/Profile.html" class="profile-hyperlink">
                             <!--Fetch user's avatar here-->
                             <img id="profile-avatar" src="" class="card-img-top avatar profile-avatar" alt="...">
                         </a>
@@ -27,7 +27,7 @@
                     <div class="card-body">
                         <div id="profile-username-name">
                             <!--Redirects to user's profile-->
-                            <a href="#" id="profilehyperlink" class="profile-hyperlink">
+                            <a href="../profile/Profile.html" id="profilehyperlink" class="profile-hyperlink">
                                 <!--Fetch user's name here-->
                                 <!--Use php Sessions here-->
                                 <h4 id="profile-name" class="fw-600">Doje</h4>
@@ -42,21 +42,21 @@
                     <ul class="list-group bg-transparent">
                         <li class="list-group-item" aria-current="true">
                             <!--Link to home page-->
-                            <a href="#">
+                            <a href="../home/home.html" id="homelink">
                                 <span><i class="fa-solid fa-house"></i></span>
                                 <p>Home</p>
                         </li>
                         </a>
                         <li class="list-group-item">
                             <!--Link to profile page-->
-                            <a id="profileURL" href="">
+                            <a id="profileURL" href="../profile/Profile.html">
                                 <span><i class="fa-solid fa-user"></i></span>
                                 <p>Profile</p>
                             </a>
                         </li>
                         <li class="list-group-item">
                             <!--Link to search page-->
-                            <a id="searchhyperlink" href="../search and explore/search.html">
+                            <a id="searchhyperlink" href="../search/search.html">
                                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
                                 <p>Search</p>
                             </a>
@@ -73,13 +73,10 @@
                     </a>
                 </div>
             </div>
-
-
             <div id="exploreandsearch" class="col-sm-12 col-md-10">
                 <input id="searchBar" type="text" placeholder="Search">
                 <input id="searchbtn" type="button" onclick=search() value="Search">
                 <ul id="searchResults"></ul>
-
                 <div id="explorearea">
                     <h1 id="exploretext">Explore</h1>
                     <table>

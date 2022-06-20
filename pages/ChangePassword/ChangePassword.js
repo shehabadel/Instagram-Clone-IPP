@@ -37,7 +37,7 @@ var m=-1;
     }
     if(l == -1 && m == -1)
     //CHANGE TRANSITION TO HOMEPAGE
-    window.location.replace("../search and explore/search.html");
+    window.location.replace("../home/home.html");
 
 }
  

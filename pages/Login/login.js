@@ -1,8 +1,10 @@
 function signin(user,pass){
     var j=-1;
     for(var i =0 ; i< ourData.length; i++){
-        if (ourData[i].username==user){
+        if (ourData[i].username===user){
+            console.log(ourData[i])
             j=i;
+            break;
         }
     }
    
@@ -10,9 +12,10 @@ function signin(user,pass){
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Username or Password";
     }else if (ourData[j].password==pass && ourData[j].Admin==false){
-        window.location.replace("../search and explore/search.html");
-         /// CHANGE PAGE TRANSITION TO HOME PAGE
+        //In order to retreive user's data in the home or admin's pages
         ourData[j].loggedIn= true;
+        window.location.replace("../home/home.html?"+ourData[j].username);
+         /// CHANGE PAGE TRANSITION TO HOME PAGE
     }else{
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Username or Password";
@@ -37,7 +40,8 @@ function signAdminin(user,pass){
         document.getElementById("error").style.opacity= 100;
         document.getElementById("error").textContent= "Incorrect Admin Username or Password";
     }else if (ourData[j].password==pass && ourData[j].Admin==true){
-        window.location.replace("../search and explore/search.html");
+        //In order to retreive user's data in the home or admin's pages
+        window.location.replace("../Admin/admin.html?"+ourData[j].username);
          /// CHANGE PAGE TRANSITION TO ADMIN HOME PAGE
         ourData[j].loggedIn= true;
     }else{

@@ -4,7 +4,7 @@
     --main-post: #2E3141;
     --main-post-inner: #363949;
     --main-liked: #09B567;
-    --main-favorite:#d22030;
+    --main-favorite: #d22030;
     --main-button: #688CFD;
     --main-text-color: #FFFFFF;
     --main-button-hover: #436fc8;
@@ -21,10 +21,12 @@
     -ms-transition: all .32s ease !important;
     -o-transition: all .32s ease !important;
 }
-a{
+
+a {
     color: var(--main-text-color);
     text-decoration: none;
 }
+
 body::-webkit-scrollbar {
     width: 12px;
     /* width of the entire scrollbar */
@@ -44,7 +46,7 @@ body::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
-/************* Start UTILITIES CLASSES **************/
+/***** Start UTILITIES CLASSES ******/
 .main-bg {
     background-color: var(--main-background) !important;
 }
@@ -52,9 +54,11 @@ body::-webkit-scrollbar-thumb {
 .main-text {
     color: var(--main-text-color) !important;
 }
-.main-post{
+
+.main-post {
     background-color: var(--main-post) !important;
 }
+
 .secondary-text {
     color: var(--secondary-text-color) !important;
 }
@@ -73,15 +77,17 @@ body::-webkit-scrollbar-thumb {
     -ms-border-radius: 80px;
     -o-border-radius: 80px;
 }
-.avatar-sm{
-	width: 40px !important;
-	height: 40px !important;
-	border-radius: 40px !important;
-	-webkit-border-radius: 40px !important;
-	-moz-border-radius: 40px !important;
-	-ms-border-radius: 40px !important;
-	-o-border-radius: 40px !important;
+
+.avatar-sm {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 40px !important;
+    -webkit-border-radius: 40px !important;
+    -moz-border-radius: 40px !important;
+    -ms-border-radius: 40px !important;
+    -o-border-radius: 40px !important;
 }
+
 .fw-600 {
     font-weight: 600 !important;
 }
@@ -91,12 +97,14 @@ i[class*='fa'] {
     font-size: 20px;
 }
 
-/************** start nav bar **************/
+/***** start nav bar *****/
 
-#left-col{
+#left-col {
     position: sticky;
+    min-width: 16%;
     top: 0;
 }
+
 .left-col-nav .list-group-item {
     background-color: transparent !important;
     cursor: pointer;
@@ -117,7 +125,7 @@ i[class*='fa'] {
 
 #left-col #profile-username-name {
     display: block;
-    width: fit-content;
+    width: 100%;
 }
 
 #left-col .profile-avatar-wrapper {
@@ -206,9 +214,9 @@ i[class*='fa'] {
 }
 
 
-/************** End nav bar **************/
+/***** End nav bar *****/
 
-/************** start main button **************/
+/***** start main button *****/
 .main-button {
     padding: 10px 40px;
     transition: var(--hover-transition);
@@ -263,6 +271,6 @@ i[class*='fa'] {
     }
 }
 
-/************** end main button **************/
+/***** end main button *****/
 
-/************* End UTILITIES CLASSES **************/
+/***** End UTILITIES CLASSES ******/

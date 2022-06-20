@@ -64,7 +64,7 @@ function signup (name , username , email , numb , pass , passconf , admin){
                     console.log(ourData[i]);
             
            
-            window.location.replace("../search and explore/search.html");
+            window.location.replace("../home/home.html");
              /// CHANGE PAGE TRANSITION TO HOME PAGE
              alert("Your data is added successfully!");
             }else{
@@ -73,7 +73,7 @@ function signup (name , username , email , numb , pass , passconf , admin){
             for (var i = 0; i < ourData.length; i++) 
                     console.log(ourData[i]);
                     
-            window.location.replace("../search and explore/search.html");
+            window.location.replace("../admin/admin.html");
             /// CHANGE PAGE TRANSITION TO ADMIN HOME PAGE
             alert("Your data is added successfully!");
             }
