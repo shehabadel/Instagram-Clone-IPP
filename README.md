@@ -45,5 +45,4 @@ list and their posts.
  - js
  - components
  - pages
- - `index.html` -> Entry point
  - `README.md`
