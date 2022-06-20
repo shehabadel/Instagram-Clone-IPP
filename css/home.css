@@ -1,104 +1,118 @@
-html{
-    background-color: var(--main-background);
+html {
+	background-color: var(--main-background);
 }
-body{
-    background-color: var(--main-background) !important;
+
+body {
+	background-color: var(--main-background) !important;
 }
+
 .posts-wrapper::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
+	width: 12px;
+	/* width of the entire scrollbar */
 }
 
 .posts-wrapper::-webkit-scrollbar-track {
-    background: var(--main-button);
-    /* color of the tracking area */
+	background: var(--main-button);
+	/* color of the tracking area */
 }
 
 .posts-wrapper::-webkit-scrollbar-thumb {
-    background-color: var(--main-background);
-    /* color of the scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-    border: 3px solid var(--main-background-hover);
-    /* creates padding around scroll thumb */
+	background-color: var(--main-background);
+	/* color of the scroll thumb */
+	border-radius: 20px;
+	/* roundness of the scroll thumb */
+	border: 3px solid var(--main-background-hover);
+	/* creates padding around scroll thumb */
 }
 
-.write-post-wrapper{
-    text-align: center;
+.write-post-wrapper {
+	text-align: center;
 }
+
 @media (max-width:600px) {
-    .write-post-wrapper{
-        text-align: left;
-    }
+	.write-post-wrapper {
+		text-align: left;
+	}
 }
 
 @media (min-width:600px) {
-    
-    .write-post-wrapper{
-        text-align: left;
-    }
-    
+
+	.write-post-wrapper {
+		text-align: left;
+	}
+
 }
+
 @media (min-width: 768px) {
-    .write-post-wrapper{
-        text-align: center;
-    }
-}
-.profile-card{
-    font-weight: 500;
+	.write-post-wrapper {
+		text-align: center;
+	}
 }
 
-#right-col{
-    position: sticky;
-    top: 0;
+.profile-card {
+	font-weight: 500;
 }
 
-/********** Start Post **********/
-.posts-wrapper{
-    /* overflow-y: scroll; */
-    width: 100%;
-}
-.post-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.post-info-wrapper{
-    display: flex;
-    flex-direction: row;
-}
-.post-info-avatar .avatar{
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-}
-.post-info-meta{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-.post-info-meta p{
-    margin-bottom: 3px;
-}
-.post-img-wrapper{
-    text-align: center;
-    background-color: var(--secondary-background);
-    padding: 30px;
-}
-.post-img{
-    border: 2px solid black;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+#right-col {
+	position: sticky;
+	top: 0;
 }
 
-/**Start Post Interactions section**/
+/**** Start Post ****/
+.posts-wrapper {
+	/* overflow-y: scroll; */
+	width: 100%;
+}
+
+.post-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post-info-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.post-info-avatar .avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+
+.post-info-meta {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.post-info-meta p {
+	margin-bottom: 3px;
+}
+
+.post-img-wrapper {
+	display: flex;
+	text-align: center;
+	background-color: var(--secondary-background);
+	padding: 30px;
+}
+
+.post-img {
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+/*Start Post Interactions section*/
 @import url(//fonts.googleapis.com/css?family=Open+Sans:600,400&subset=latin,cyrillic);
 
 .click {
@@ -115,7 +129,7 @@ body{
 	margin-top: 3px;
 	z-index: 999;
 	position: absolute;
-    transition: all .32s ease;
+	transition: all .32s ease;
 	right: 0;
 }
 
@@ -124,14 +138,15 @@ body{
 }
 
 .click i:active {
-	transform: scale(0.93,0.93) translateY(1px);
-	-webkit-transform: scale(0.93,0.93) translateY(1px);
-	-moz-transform: scale(0.93,0.93) translateY(1px);
-	-ms-transform: scale(0.93,0.93) translateY(1px);
-	-o-transform: scale(0.93,0.93) translateY(1px);
+	transform: scale(0.93, 0.93) translateY(1px);
+	-webkit-transform: scale(0.93, 0.93) translateY(1px);
+	-moz-transform: scale(0.93, 0.93) translateY(1px);
+	-ms-transform: scale(0.93, 0.93) translateY(1px);
+	-o-transform: scale(0.93, 0.93) translateY(1px);
 }
 
-.click .ring, .click .ring2 {
+.click .ring,
+.click .ring2 {
 	opacity: 0;
 	background: grey;
 	width: 1px;
@@ -141,21 +156,22 @@ body{
 	left: 18px;
 	border-radius: 50%;
 	cursor: pointer;
-    transition: all .32s ease;
+	transition: all .32s ease;
 }
 
-.click.active i, .click.active-2 i {
+.click.active i,
+.click.active-2 i {
 	color: #f52742 !important;
 }
 
 .click.active-2 .ring {
 	width: 30px !important;
-    height: 30px !important;
-    top: -4px !important;
-    left: -4px !important;
-    position: absolute;
-    border-radius: 50%;
-    opacity: 1 !important;
+	height: 30px !important;
+	top: -4px !important;
+	left: -4px !important;
+	position: absolute;
+	border-radius: 50%;
+	opacity: 1 !important;
 }
 
 .click.active-2 .ring {
@@ -168,12 +184,12 @@ body{
 
 .click.active-3 .ring2 {
 	width: 32px !important;
-    height: 32px !important;
-    top: -5px !important;
-    left: -5px !important;
-    position: absolute;
-    border-radius: 50%;
-    opacity: 1 !important;
+	height: 32px !important;
+	top: -5px !important;
+	left: -5px !important;
+	position: absolute;
+	border-radius: 50%;
+	opacity: 1 !important;
 }
 
 .click .info {
@@ -200,22 +216,22 @@ body{
 	opacity: 1;
 }
 
-.post-interactions{
+.post-interactions {
 	background-color: var(--main-background);
-    padding: 0.4rem;
-    padding-top: 1.2rem;
+	padding: 0.4rem;
+	padding-top: 1.2rem;
 	padding-left: 1rem;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
 	text-align: center;
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
 }
 
-.favorites-number{
+.favorites-number {
 	position: relative;
 	transition: all .32s ease;
 	-webkit-transition: all .32s ease;
@@ -223,7 +239,8 @@ body{
 	-ms-transition: all .32s ease;
 	-o-transition: all .32s ease;
 }
-.favorites-number span{
+
+.favorites-number span {
 	position: absolute;
 	top: 1px;
 	transition: all .32s ease;
@@ -232,7 +249,8 @@ body{
 	-ms-transition: all .32s ease;
 	-o-transition: all .32s ease;
 }
-.comments-btn{
+
+.comments-btn {
 	position: relative;
 	cursor: pointer;
 	transition: all .32s ease;
@@ -241,16 +259,10 @@ body{
 	-ms-transition: all .32s ease;
 	-o-transition: all .32s ease;
 }
-.comments-btn i{
+
+.comments-btn i {
 	position: absolute;
-	top:2px;
-	transition: all .32s ease !important;
-	-webkit-transition: all .32s ease !important;
-	-moz-transition: all .32s ease !important;
-	-ms-transition: all .32s ease !important;
-	-o-transition: all .32s ease !important;
-}
-.transition{
+	top: 2px;
 	transition: all .32s ease !important;
 	-webkit-transition: all .32s ease !important;
 	-moz-transition: all .32s ease !important;
@@ -258,17 +270,28 @@ body{
 	-o-transition: all .32s ease !important;
 }
 
-.comment{
+.transition {
+	transition: all .32s ease !important;
+	-webkit-transition: all .32s ease !important;
+	-moz-transition: all .32s ease !important;
+	-ms-transition: all .32s ease !important;
+	-o-transition: all .32s ease !important;
+}
+
+.comment {
 	background-color: var(--secondary-background);
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
 }
-.comment-meta{
+
+.comment-meta {
 	display: flex;
 	flex-direction: row;
 }
-.comment-meta .avatar, .comment-input .avatar{
+
+.comment-meta .avatar,
+.comment-input .avatar {
 	width: 40px;
 	height: 40px;
 	border-radius: 40px;
@@ -277,51 +300,59 @@ body{
 	-ms-border-radius: 40px;
 	-o-border-radius: 40px;
 }
-.comment-input-wrapper{
+
+.comment-input-wrapper {
 	display: flex;
 	flex: row;
 }
-.comment-input-text{
+
+.comment-input-text {
 	margin-left: 10px;
-    border-radius: 20px;
-	padding:0 10px;
-    flex-grow: 1;
-    border: 2px solid var(--main-background);
+	border-radius: 20px;
+	padding: 0 10px;
+	flex-grow: 1;
+	border: 2px solid var(--main-background);
 }
-.comment-input-text::placeholder{
+
+.comment-input-text::placeholder {
 	padding: 0 10px;
 }
-.comment-input-text:focus{
+
+.comment-input-text:focus {
 	border: 4px solid var(--secondary-background);
 }
-.comment-input-text:focus-visible{
+
+.comment-input-text:focus-visible {
 	border: none;
 }
-/**End Post Interactions section**/
 
-/********** End Post **********/
+/*End Post Interactions section*/
 
-/********** Start Friends **********/
-.friends .avatar{
-	width: 40px;
-	height: 40px;
+/**** End Post ****/
+
+/**** Start Friends ****/
+.avatar {
+	width: 100%;
 	border-radius: 40px;
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	-ms-border-radius: 40px;
 	-o-border-radius: 40px;
 }
-.friend-name-wrapper{
+
+.friend-name-wrapper {
 	align-self: center;
 }
-.friend-name{
+
+.friend-name {
 	margin-left: 20px;
 	margin-bottom: 0;
 }
-.friend{
+
+.friend {
 	display: flex;
-	flex: row;
-	padding:10px;
+	width: 100%;
+	padding: 10px;
 	margin: 14px 0;
 	background-color: var(--secondary-background);
 	border-radius: 12px;
@@ -336,7 +367,13 @@ body{
 	-ms-transition: all .32s ease !important;
 	-o-transition: all .32s ease !important;
 }
-.friend:hover{
+
+.friend:hover {
 	background-color: var(--main-background-hover);
 }
-/********** End Friends ***********/
+
+.friends-list {
+	min-width: 150px;
+}
+
+/**** End Friends *****/
